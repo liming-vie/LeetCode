@@ -8,43 +8,41 @@
  */
 class Solution {
 public:
-    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-        ListNode*n1=l1,*n2=l2;
-        ListNode *res,*head;
-        int t=0;
-        int sum=n1->val + n2->val;
-        t=sum/10;
-        sum%=10;
-        res=new ListNode(sum);
-        head=res;
-        while(n1->next && n2->next){
-            sum=n1->next->val + n2->next->val +t;
-            t=sum/10;
-            sum%=10;
-            res->next = new ListNode(sum);
-            res=res->next;
-            n1=n1->next;
-            n2=n2->next;
+    void func(int*y, int *val) {
+        if((*val) > 9){
+            *y = 1;
+            *val -= 10;
+        }else   *y=0;
+    }
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode *head = l1 ? l1 : l2;
+        ListNode *move = head, *prev = nullptr;
+        int y=0;
+        while(l1 && l2) {
+            move->val = l2->val + l1->val + y;
+            func(&y, &(move->val));
+            prev=move;
+            move=move->next;
+            l1 = l1->next;
+            l2 = l2->next;
         }
-        while(n1->next){
-            sum = n1->next->val + t;
-            t=sum/10;
-            sum%=10;
-            res->next = new ListNode(sum);
-            res=res->next;
-            n1=n1->next;
+        if(l1) {
+            if(prev)    prev->next = l1;
+            move = l1;
         }
-        while(n2->next){
-            sum=n2->next->val + t;
-            t=sum/10;
-            sum%=10;
-            res->next = new ListNode(sum);
-            res=res->next;
-            n2=n2->next;
+        else if(l2) {
+            if(prev)    prev->next = l2;
+            move = l2;
         }
-        if(t){
-            res->next = new ListNode(t);
+        
+        while(move) {
+            move->val += y;
+            func(&y, &(move->val));
+            prev=move;
+            move=move->next;
         }
+        
+        prev->next = (y?new ListNode(1):nullptr);
         return head;
     }
 };
