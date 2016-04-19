@@ -1,29 +1,32 @@
 class Solution {
 public:
+    struct Num {
+        int val;
+        int idx;
+    };
+    static bool comp(Num &a,Num &b){
+      return a.val < b.val;
+    }
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int>res;
-        if(nums.size()<=1)  return res;
+        int size=nums.size();
+        if(size <= 1)   return vector<int>();
         
-        unordered_map<int,int> mp;
-        for(int i=0; i<nums.size(); ++i){
-            mp[nums[i]]=i;
+        vector<Num> data;
+        for(int i=0; i<size; ++i) {
+            data.push_back({nums[i], i});
         }
+        sort(data.begin(), data.end(), comp);
         
-        int n=(nums.size());
-        for(int i=0; i<n; ++i){
-            if(mp.find(target-nums[i])!=mp.end()){
-                int a=mp[target-nums[i]];
-                int b=i;
-                if(a==i)    continue;
-                if(a<b){
-                    res.push_back(a+1);
-                    res.push_back(b+1);
-                }else{
-                    res.push_back(b+1);
-                    res.push_back(a+1);
-                }
-                return res;
-            }
+        int l=0, r=size-1;
+        int tmp;
+        while(l<r) {
+            tmp=data[l].val + data[r].val;
+            if(tmp < target) ++l;
+            else if(tmp > target) --r;
+            else break;
         }
+        int idx1 = data[l].idx;
+        int idx2 = data[r].idx;
+        return idx1 < idx2 ? vector<int>{idx1, idx2} : vector<int>{idx2, idx1};       
     }
 };
