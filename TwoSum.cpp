@@ -11,11 +11,11 @@ public:
         int size=nums.size();
         if(size <= 1)   return vector<int>();
         
-        vector<Num> data;
+        Num *data = new Num[size];
         for(int i=0; i<size; ++i) {
-            data.push_back({nums[i], i});
+            data[i] = {nums[i], i};
         }
-        sort(data.begin(), data.end(), comp);
+        sort(data, data + size, comp);
         
         int l=0, r=size-1;
         int tmp;
