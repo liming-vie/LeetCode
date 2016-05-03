@@ -1,25 +1,53 @@
 class Solution {
 public:
-    string longestPalindrome(string s) {
-        int len = s.length();
-        if(len < 2) return s;
-        bool is[1000][1000];
-        for(int i=0; i<len; ++i) {
-            is[i][i] = true;
+    int*next;
+    void computeNext(string&pattern, int begin) {
+        int i=0;
+        int j=-1;
+        int idx=0;
+        next[0]=-1;
+        int len=pattern.length() - begin;
+        while(i<len) {
+            while(j!=-1 && pattern[j] != pattern[idx])
+                j=next[j];
+            next[++i] = ++j;
+            ++idx;
         }
-        int res=1,res_b=0;
-        for(int i=1; i<len; ++i) {
-            is[i-1][i] = (s[i] == s[i-1]) ? res=2, res_b=i-1, true: false;
-        }
-        
-        int upperi, j;
-        for(int l=3; l<=len; ++l) {
-            upperi = len - l;
-            for(int i=0; i<=upperi; ++i) {
-                j=i+l-1;
-                is[i][j] = ((s[i] == s[j]) && is[i+1][j-1]) ? res=l,res_b=i,true : false;
+    }
+    int func(string&s, string&p, int begin_p) {
+        int i=0,j=0;
+        int l1=s.length(), l2=p.length();
+        int res=0;
+        while(i<l1 && j < l2) {
+            if(j==-1 || s[i]==p[j+begin_p]) {
+                ++i;
+                ++j;
+                res = res > j ? res : j;
+            }
+            else {
+                j=next[j];
             }
         }
-        return s.substr(res_b, res);
+        return res;
+    }
+    string longestPalindrome(string s) {
+        int len=s.length();
+        if(len<2)   return s;
+        
+        next = new int[len+1];
+        int res=0;
+        int begin=0;
+        string rev = s;
+        reverse(rev.begin(), rev.end());
+        for(int i=0; i<len; ++i) {
+            computeNext(rev, i);
+            int tmp=func(s,rev, i);
+            if(tmp>res) {
+                res=tmp;
+                begin=i;
+            }
+            if(len - i < res) break;
+        }
+        return rev.substr(begin, res);
     }
 };
