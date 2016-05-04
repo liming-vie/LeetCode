@@ -1,37 +1,22 @@
 class Solution {
 public:
-    string convert(string s, int nRows) {
-    int n = s.length();
-  if (n <= nRows || nRows <= 1) return s;
-
-  int col = 0;
-  while (n>0){
-    n -= nRows;
-    col++;
-    if (n >= (nRows - 2)){
-      n -= nRows - 2;
-      col += (nRows - 2);
-    }
-    else if (n>0){
-      col += n;
-      n = 0;
-    }
-  }
-  n = s.length();
-  string res;
-  int maxd = (nRows << 1) - 2;
-  int sum = 0;
-  for (int i = 0; i<nRows; ++i){
-    int p = i;
-    int d = maxd - (i << 1);
-    for (int j = 0; j<col; ++j){
-      res.push_back(s[p]);
-      if (d == 0)    d = maxd;
-      p += d;
-      if (p >= n)    break;
-      d = maxd - d;
-    }
-  }
-  return res;   
+    string convert(string s, int numRows) {
+        if(numRows == 1)    return s;
+        int len=s.length();
+        int max = (numRows << 1) - 2;
+        int d;
+        int j=0;
+        stringstream ss;
+        for(int i=0; i<numRows; ++i) {
+            d = max - (i<<1);
+            d = (d==0 ? max : d);
+            j=i;
+            while(j<len) {
+                ss<<s[j];
+                j+=d;
+                d = (d==max?max:max-d);
+            }
+        }
+        return ss.str();
     }
 };
