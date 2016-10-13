@@ -1,37 +1,37 @@
 class Solution {
 public:
-    bool is[50][50]={};
-    bool col[50]={};
-    bool rd[100]={};
-    bool ld[100]={};
-    int res=0;
-
-    int totalNQueens(int n) {
-        func(0,n);
-        return res;
-    }
+    vector<vector<bool>> is;
+    vector<bool> sum, diff, col;
+    int res;
     
-    void func(int vi,int &n){
-        if(vi==n){;
+    void solve(int vi, int n) {
+        if(vi==n)   {
             ++res;
             return;
         }
         
-        int i=vi;
-        for(int j=0; j<n; ++j){
-            if(col[j] || rd[i+j] || ld[i+n-j-1] || is[i][j])
-                continue;
-            col[j]=true;
-            ld[i+n-j-1]=true;
-            rd[i+j]=true;
-            is[i][j]=true;
-            
-            func(vi+1,n);
-            
-            is[i][j]=false;
-            ld[i+n-j-1]=false;
-            rd[i+j]=false;
-            col[j]=false;   
+        for(int i=0; i<n; ++i) {
+            if(col[i] && sum[vi+i] && diff[vi-i+n]) {
+                col[i] = false;
+                sum[vi+i]=false;
+                diff[vi-i+n]=false;
+                is[vi][i]=true;
+                solve(vi+1, n);
+                is[vi][i]=false;
+                col[i] = true;
+                sum[vi+i]=true;
+                diff[vi-i+n]=true;
+            }
         }
+    }
+    
+    int totalNQueens(int n) {
+        sum.resize(n<<1, true);
+        diff.resize(n<<1, true);
+        col.resize(n, true);
+        is.resize(n, vector<bool>(n, false));
+        res=0;
+        solve(0, n);
+        return res;
     }
 };
