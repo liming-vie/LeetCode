@@ -1,36 +1,39 @@
 class Solution {
 public:
-vector<int> spiralOrder(vector<vector<int>>& matrix) {
-  vector<int> res;
-  int m = matrix.size();
-  int n = 0;
-  if (m>0) n = matrix[0].size();
-  int i = 0, j = 0;
-  int u = 0, r = n - 1, d = m - 1, l = 0;
-  while (u <= d || l <= r){
-    while (j<r && u<=d){
-      res.push_back(matrix[i][j]);
-      ++j;
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        int i=0, j=0;
+        int n=matrix.size(), m=n>0?matrix[0].size():0;
+        vector<int> res;
+        int u=-1, d=n, l=-1, r=m;
+        int flag=0;
+        while(i>u && i<d && j>l && j<r) {
+            switch(flag) {
+            case 0:
+                while(j<r) res.push_back(matrix[i][j++]);
+                ++u;
+                --j;
+                ++i;
+                break;
+            case 1:
+                while(i<d) res.push_back(matrix[i++][j]);
+                --r;
+                --i;
+                --j;   
+                break;
+            case 2:
+                while(j>l) res.push_back(matrix[i][j--]);
+                --d;
+                ++j;
+                --i;
+                break;
+            case 3:
+                while(i>u) res.push_back(matrix[i--][j]);
+                ++l;
+                ++i;    
+                ++j;
+            }
+            flag = (flag+1)%4;
+        }
+        return res;
     }
-    ++u;
-    while (i<d && l<=r){
-      res.push_back(matrix[i][j]);
-      ++i;
-    }
-    --r;
-    while (j>l && u<=d){
-      res.push_back(matrix[i][j]);
-      --j;
-    }
-    --d;
-    while (i>u && l<=r){
-      res.push_back(matrix[i][j]);
-      --i;
-    }
-    ++l;
-  }
-  if(i>=0 && i<m && j>=0 && j<n)
-      res.push_back(matrix[i][j]);
-  return res;
-}
 };
