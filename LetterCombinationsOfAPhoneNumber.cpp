@@ -1,48 +1,25 @@
 class Solution {
 public:
+    vector<vector<char>> letter { {}, {} , {'a','b','c'},
+        {'d','e','f'}, {'g','h','i'}, {'j','k','l'}, 
+        {'m','n','o'}, {'p','q','r','s'}, {'t','u','v'}, {'w','x','y','z'}};
+        
     vector<string> res;
     
-    string getstr(char c){
-        switch(c){
-        case '1': return "";
-        case '2': return "abc";
-        case '3': return "def";
-        case '4': return "ghi";
-        case '5': return "jkl";
-        case '6': return "mno";
-        case '7': return "pqrs";
-        case '8': return "tuv";
-        case '9': return "wxyz";
-        case '0': return " ";
-        case '*': return "+";
-        case '#': return "";
-        }
-        return "";
-    }
-    
-    void getres(int vi, int len, string &str, string tmp){
-        if(vi==len){
-            res.push_back(tmp);
+    void proc(string& digits, int vi, string cur) {
+        if (vi == digits.length())  {
+            res.push_back(cur);
             return;
         }
-        
-        string s=getstr(str[vi]);
-        int l=s.length();
-        if(l==0){
-            getres(vi+1,len,str,tmp);
-            return;
-        }    
-        
-        for(int i=0; i<l; ++i)
-            getres(vi+1,len,str,tmp+s[i]);
+        int num = digits[vi]-'0';
+        for(int i=0; i<letter[num].size(); ++i) {
+            proc(digits, vi+1, cur+letter[num][i]);
+        }
     }
-    
     vector<string> letterCombinations(string digits) {
-        int len=digits.length();
-        if(len==0)  return res;
-        
-        getres(0,len,digits,"");
-        
+        if(digits.size() == 0)  return res;
+        res.clear();
+        proc(digits, 0, "");
         return res;
     }
 };
