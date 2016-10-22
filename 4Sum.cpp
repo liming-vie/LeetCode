@@ -33,6 +33,7 @@ public:
                         if (v1[i].second.idx >= v2[j].first.idx) continue;
                         vector<int> cur{ v1[i].first.val, v1[i].second.val,
                             v2[j].first.val, v2[j].second.val };
+                        // judge if duplicate, still O(n^2)?
                         bool valid = true;
                         for (int k = res.size() - 1; k>=(int)res.size() - count; --k)
                             if (res[k] == cur) {
