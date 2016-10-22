@@ -1,28 +1,25 @@
 class Solution {
 public:
+#define mk(a,b) make_pair(a,b)
     bool isValid(string s) {
-        vector<char> v;
-        int len=s.length();
-        for(int i=0; i<len; ++i){
-            switch(s[i]){
-                case '(':   
-                    v.push_back('('); break;
-                case ')':  
-                    if(v.size()==0 || v.back()!='(')    return false;
-                    v.pop_back();      break;
-                case '{':
-                    v.push_back('{'); break;
-                case '}':
-                    if(v.size()==0 || v.back()!='{')    return false;
-                    v.pop_back();      break;
-                case '[':
-                    v.push_back('['); break;
-                case ']':
-                    if(v.size()==0 || v.back()!='[')    return false;
-                        v.pop_back();      break;
+        map<char,char> mp;
+        mp.insert(mk('}','{'));
+        mp.insert(mk(']','['));
+        mp.insert(mk(')','('));
+        stack<char> st;
+        for(auto i:s)
+            switch(i) {
+            case '(':
+            case '[':
+            case '{':
+                st.push(i);
+                break;
+            case ')':
+            case ']':
+            case '}':
+                if(st.size()==0 || st.top() != mp[i]) return false;
+                st.pop();
             }
-        }
-        if(v.size()>0)    return false;
-        return true;
+        return st.size() == 0;
     }
 };
