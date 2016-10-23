@@ -6,40 +6,23 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+ 
+#define mk(a,b) make_pair(a,b)
 class Solution {
 public:
-    ListNode *mergeKLists(vector<ListNode *> &lists) {
-        ListNode *newlist=NULL, *head=NULL;
-        int len=lists.size();
-        for(int i=0; i<len; ++i)
-            if(lists[i]==NULL){
-                len--;
-                lists.erase(lists.begin()+i);
-                --i;
-            }
-        if(lists.size()==0)   return NULL;
-        if(lists.size()==1)   return lists[0];
-        
-        multimap<int,int> mp;
-        len=lists.size();
-        for(int i=0;i<len; ++i)
-            mp.insert(make_pair((lists[i])->val,i));
-        while(mp.size()>1){
-            int i = mp.begin()->second;
-            mp.erase(mp.begin());
-            if(newlist==NULL){
-                newlist=lists[i];
-                head=newlist;
-            }else{
-                newlist->next=lists[i];
-                newlist=newlist->next;
-            }
-            if(lists[i]->next!=NULL){
-                lists[i]=lists[i]->next;
-                mp.insert(make_pair(lists[i]->val,i));
-            }
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        multimap<int, ListNode*> mp;
+        for(int i=0; i<lists.size(); ++i)
+            if(lists[i]) 
+                mp.insert(mk(lists[i]->val, lists[i]));
+        ListNode* head=new ListNode(0), *move=head;
+        while(!mp.empty()) {
+            auto node = mp.begin();
+            mp.erase(node);
+            move->next=node->second;
+            move=move->next;
+            if(move->next) mp.insert(mk(move->next->val, move->next));
         }
-        newlist->next=lists[(mp.begin())->second];
-        return head;
+        return head->next;
     }
 };
