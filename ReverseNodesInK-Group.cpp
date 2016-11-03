@@ -8,36 +8,33 @@
  */
 class Solution {
 public:
-ListNode *reverseKGroup(ListNode *head, int k) {
-  if(k<=1)    return head;
-  int len=0;
-  ListNode*move=head;
-  while(move){
-      ++len;
-      move=move->next;
-  }
-  
-  ListNode*h=head,*n0=head,*last=NULL,*prev,*next,*tmp;
-  while(k<=len){
-      len-=k;
-      tmp=n0;
-      for(int i=k-1; i>0; --i){
-          int t=i;
-          move=n0;
-          prev=last;
-          n0=n0->next;
-          while(t--){
-              if(prev)    prev->next=move->next;
-              prev=move->next;
-              next=prev->next;
-              prev->next=move;
-              move->next=next;
-          }
-      }
-      if(h==head) h=n0;
-      last=tmp;
-      n0=last->next;
-  }
-  return h;
-}
+    ListNode* reverseKGroup(ListNode* head, int k) {
+        if(!head || k==1)   return head;
+        
+        bool first=true;
+        ListNode *move=head, *pre=NULL, *tmp, *next, *tail=NULL;
+        while(move) {
+            tmp=move;
+            for(int i=1; i<k && tmp; ++i) 
+                tmp=tmp->next;
+            if(!tmp)    break;
+            
+            pre=move;
+            move=move->next;    
+            tmp=tail;
+            tail=pre;
+            for(int i=1; i<k; ++i) {
+                next=move->next;
+                move->next=pre;
+                pre=move;
+                move=next;
+            }
+            
+            if(first)   head=pre;
+            if(tmp) tmp->next=pre;
+            first=false;
+        }
+        if(tail)    tail->next=move;
+        return head;
+    }
 };
