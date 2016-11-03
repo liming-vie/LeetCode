@@ -1,26 +1,27 @@
 class Solution {
 public:
-    int find(int a[],int l,int r,int target){
-        if(l>r) return -1;
-        
-        int mid;
-        if(a[l]<=a[r]){
-            while(l<=r){
-                mid=(l+r)>>1;
-                if(target==a[mid])  return mid;
-                else if(target<a[mid])  r=mid-1;
-                else l=mid+1;
+    #define MID(left, right) (left+((right-left)>>1))
+    int func(vector<int>&nums, int left, int right, int target) {
+        if(left>right)  return -1;
+        // binary search
+        if(nums[left] <= nums[right]) {
+            while(left<=right) {
+                int mid=MID(left, right);
+                if(nums[mid]==target)   return mid;
+                else if(nums[mid]>target)   right=mid-1;
+                else    left=mid+1;
             }
             return -1;
-        }else{
-            mid=(l+r)>>1;
-            int tmp=find(a,l,mid,target);
-            if(tmp!=-1)    return tmp;
-            return find(a,mid+1,r,target);
+        }
+        else {
+            int mid=MID(left, right);
+            int a=func(nums, left, mid, target);
+            if(a!=-1)   return a;
+            return func(nums, mid+1, right, target);
         }
     }
 
-    int search(int A[], int n, int target) {
-        return find(A,0,n-1,target);
+    int search(vector<int>& nums, int target) {
+        return func(nums, 0, nums.size()-1, target);
     }
 };
