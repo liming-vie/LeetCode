@@ -1,30 +1,18 @@
 class Solution {
 public:
-    vector<int> searchRange(int A[], int n, int target) {
-        if(n<=0)    return vector<int>{-1,-1};
-        if(n==1){
-            if(A[0]==target)    return vector<int>{0,0};
-            return vector<int>{-1,-1};
+    vector<int> searchRange(vector<int>& nums, int target) {
+        int l=0, r=nums.size()-1, mid;
+        while(l<=r) {
+            mid=l+((r-l)>>1);
+            if(nums[mid]==target) {
+                int b=mid-1,e=mid;
+                while(b>=0 && nums[b]==target)  --b;
+                while(e<nums.size() && nums[e]==target) ++e;
+                return vector<int>{b+1,e-1};
+            }
+            else if(nums[mid]<target) l=mid+1;
+            else r=mid-1;
         }
-        
-        int l=0,r=n-1;
-        int mid;
-        while(l<=r){
-            mid=(l+r)>>1;
-            if(A[mid]==target){
-                l=mid;
-                while(l>0 && A[l-1]==target)    --l;
-                r=mid;
-                while(r<n-1 && A[r+1]==target)  ++r;
-                break;
-            }else if(A[mid]>target) r=mid-1;
-            else    l=mid+1;
-        }
-        if(l>r) l=r=-1;
-        
-        vector<int> res;
-        res.push_back(l);
-        res.push_back(r);
-        return res;
+        return vector<int>{-1,-1};
     }
 };
