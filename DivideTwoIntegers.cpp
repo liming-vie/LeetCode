@@ -1,36 +1,26 @@
+#define MAX_INT ~(1<<31)
+#define MIN_INT 1<<31
 class Solution {
 public:
     int divide(int dividend, int divisor) {
-        int max=~(1<<31),min=1<<31;
-        
-        if(divisor==0)  return max;
-        
-        long long int d=dividend,s=divisor,tmp,k=0,res=0;
-        
-        bool neg1=(d<0),neg2=(s<0);
-        if(neg1)    d=0-d;
-        if(neg2)    s=0-s;
-        
-        if(d<s) return 0;
-    
-        if(s==1)    res=d;
-        else{
-            tmp=s;
-            while((tmp<<=1)<=d)   ++k;
-            tmp>>=1;
-            
-            while(d>=s){
-                while(d<tmp){
-                    --k;
-                    tmp>>=1;
-                }
-                res+=(1<<k);
-                d-=tmp;
-            }
+        long long end = dividend, sor = divisor;
+        end = end < 0 ? -end : end;
+        sor = sor < 0 ? -sor : sor;
+        long long int res = 0;
+        long long int k = 0, tmp = sor;
+        while (tmp <= end) {
+            tmp <<= 1;
+            ++k;
         }
-        
-        if(neg1!=neg2)  res=0-res;
-        if(res<min||res>max)    return max;
-        return res;
+        while (end >= sor) {
+            while (tmp > end) {
+                tmp >>= 1;
+                --k;
+            }
+            res += 1LL << k;
+            end -= tmp;
+        }
+        res = ((dividend<0) ^ (divisor<0)) ? -res : res;
+        return (res<MIN_INT || res>MAX_INT) ? MAX_INT : res;
     }
 };
