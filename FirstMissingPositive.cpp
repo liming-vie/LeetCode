@@ -1,21 +1,20 @@
+// label the exist index number as minus
 class Solution {
 public:
-   int firstMissingPositive(int A[],int n)
-{
-    bool flag=false;
-    for (int i=1;i<=n;i++) if (A[i-1]==1) flag=true;
-    if (flag==false) return 1;
-    for (int i=1;i<=n;i++) if (A[i-1]<=0) A[i-1]=1;
-    for (int i=1;i<=n;i++) if (A[i-1]>n) A[i-1]=1;
-    for (int i=1;i<=n;i++)
-    {
-        while (1)
-        {
-            if (A[A[i-1]-1]==A[i-1]) break;
-            swap(A[i-1],A[A[i-1]-1]);
+    int firstMissingPositive(vector<int>& nums) {
+        int n=nums.size();
+        for(int i=0; i<n; ++i) {
+            if(nums[i]<=0)
+                nums[i] = n+1;
         }
+        for(int i=0; i<n; ++i) {
+            int v=abs(nums[i]);
+            if(v>0 && v<=n && nums[v-1] > 0)
+                nums[v-1]=-nums[v-1];
+        }
+        for(int i=0; i<n; ++i) 
+            if(nums[i] > 0)
+                return i+1;
+        return n+1;
     }
-    for (int i=1;i<=n;i++) if (A[i-1]!=i) return i;
-    return n+1;
-}
 };
