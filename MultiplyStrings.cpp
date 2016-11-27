@@ -1,31 +1,30 @@
 class Solution {
 public:
     string multiply(string num1, string num2) {
-        int len1=num1.length(),len2=num2.length();
+        int l1=num1.length(), l2=num2.length();
+        for(int i=0; i<l1; ++i) num1[i]-='0';
+        for(int i=0; i<l2; ++i) num2[i]-='0';
         
-        if(len1==0||len2==0)    return "";
+        vector<int> res(l1+l2+1,0);
+        for(int i=l1-1; i>=0; --i) 
+            for(int j=l2-1; j>=0; --j) 
+                res[i+j+1]+=num1[i]*num2[j];
         
-        for(int i=0; i<len1; ++i)   num1[i]-='0';
-        for(int j=0; j<len2; ++j)   num2[j]-='0';
-        
-        int tmp[10000]={0};
-        for(int i=0; i<len1; i++)
-            for(int j=0;j<len2; j++)
-                tmp[i+j+1]+=num1[i]*num2[j];
-
-        string res="";
-        for(int i=len1+len2-1; i>=0; --i){
-            if(i>0 && tmp[i]>9){
-                tmp[i-1]+=tmp[i]/10;
-                tmp[i] %= 10;
-            }    
-            res = char(tmp[i]+'0')+res;
+        int t=0;
+        for(int i=l1+l2-1; i>=0; --i) {
+            res[i]+=t;
+            t=res[i]/10;
+            res[i]%=10;
         }
         
-        int len=res.length()-1,i;
-        for(i=0; i<len; ++i){
-            if(res[i]!='0') break;
+        string str="";
+        for(int i=l1+l2-1; i>=0; --i)
+            str=(char)('0'+res[i])+str;
+        
+        for(int i=0; i<l1+l2; ++i) {
+            if(str[i] != '0')
+                return str.substr(i);
         }
-        return res.substr(i);
+        return "0";
     }
 };
