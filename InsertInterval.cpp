@@ -10,46 +10,29 @@
 class Solution {
 public:
     vector<Interval> insert(vector<Interval>& intervals, Interval newInterval) {
-        int n=intervals.size();
-        if(n==0){
-            intervals.push_back(newInterval);
-            return intervals;
+        bool flag=true;
+        for(auto i=intervals.begin(); i!=intervals.end(); ++i) {
+            if(newInterval.start<=i->start) {
+                intervals.insert(i, newInterval);
+                flag=false;
+                break;
+            }
         }
-        vector<Interval> res;
-        Interval tmp;
-        if(intervals[0].start < newInterval.start){
-            tmp=intervals[0];
-        }else{
-            tmp=newInterval;
-            newInterval=Interval();
+        if(flag) {
+            intervals.push_back(newInterval);
         }
         
-        for(int i=0; i<n;++i){
-            if(newInterval.start!=0 && newInterval.end!=0 && newInterval.start<intervals[i].start){
-                if(tmp.end<newInterval.start){
-                    res.push_back(tmp);
-                    tmp=newInterval;
-                }
-                else if(tmp.end<newInterval.end){
-                    tmp.end=newInterval.end;
-                }
-                newInterval=Interval();
+        vector<Interval> res;
+        Interval tmp=intervals[0];
+        for(int i=1; i<intervals.size(); ++i) {
+            if(intervals[i].end <= tmp.end) continue;
+            if(intervals[i].start <= tmp.end) {
+                tmp.end=intervals[i].end;
             }
-            if(tmp.end<intervals[i].start){
+            else {
                 res.push_back(tmp);
                 tmp=intervals[i];
             }
-            else if(tmp.end<intervals[i].end)
-                tmp.end=intervals[i].end;
-        }
-        if(newInterval.start!=0&&newInterval.end!=0){
-            if(tmp.end<newInterval.start){
-                    res.push_back(tmp);
-                    tmp=newInterval;
-                }
-                else if(tmp.end<newInterval.end){
-                    tmp.end=newInterval.end;
-                }
         }
         res.push_back(tmp);
         return res;
