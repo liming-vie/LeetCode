@@ -9,26 +9,29 @@
  */
 class Solution {
 public:
-    static bool comp(const Interval&a, const Interval&b){
+    static bool cmp(const Interval &a, const Interval &b) {
         return a.start<b.start;
     }
+    
     vector<Interval> merge(vector<Interval>& intervals) {
         vector<Interval> res;
         int n=intervals.size();
-        if(n==0) return res;
+        if(n==0)    return res;
         
-        sort(intervals.begin(),intervals.end(),comp);
-        Interval tmp=intervals[0];
-        for(int i=1; i<n; ++i){
-            if(intervals[i].end<=tmp.end)   continue;
-            if(intervals[i].start>tmp.end){
-                res.push_back(tmp);
-                tmp=intervals[i];
-                continue;
+        sort(intervals.begin(), intervals.end(), cmp);
+        
+        Interval cur=intervals[0];
+        for(int i=1; i<n; ++i) {
+            if(intervals[i].end <= cur.end)    continue;
+            if(intervals[i].start <= cur.end) {
+                cur.end = intervals[i].end;
             }
-            tmp.end=intervals[i].end;
+            else {
+                res.push_back(cur);
+                cur=intervals[i];
+            }
         }
-        res.push_back(tmp);
+        res.push_back(cur);
         return res;
     }
 };
