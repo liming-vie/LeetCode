@@ -1,36 +1,31 @@
 class Solution {
 public:
-    int n;
     vector<vector<int>> res;
-    vector<int>tmpres;
-    bool is[50];
-    vector<vector<int>> permuteUnique(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        n = nums.size();
-        func(nums,0);
-        return res;
-    }
     
-    void func(vector<int> &nums, int vi){
-        if(vi==n){
-            vector<int> tmp=vector<int>(tmpres);
-            res.push_back(tmp);
-            return ;
+    void func(vector<int>&nums, int vi) {
+        if(vi==nums.size()) {
+            res.push_back(nums);
+            return;
         }
-        
-        for(int i=0; i<n; ++i){
-            if(is[i])
-                continue;
-            tmpres.push_back(nums[i]);
-            is[i]=true;
-            func(nums,vi+1);
-            tmpres.pop_back();
-            is[i]=false;
-            int j;
-            for(j=i+1; j<n; ++j)
-                if(nums[i]!=nums[j])
+            
+        for(int i=vi; i<nums.size(); ++i) {
+            // nums[vi,i) != nums[i]
+            bool flag=true;
+            for(int j=vi; j<i; ++j) {
+                if(nums[j] == nums[i]) {
+                    flag=false;
                     break;
-            i=j-1;
+                }
+            }
+            if(!flag)   continue;
+            swap(nums[i], nums[vi]);
+            func(nums, vi+1);
+            swap(nums[i], nums[vi]);
         }
+    }
+
+    vector<vector<int>> permuteUnique(vector<int>& nums) {
+        func(nums, 0);
+        return res;
     }
 };
