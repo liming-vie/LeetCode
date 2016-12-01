@@ -1,28 +1,35 @@
 class Solution {
 public:
-    string addBinary(string a, string b) {
-        int len1=a.length(),len2=b.length();
-        if(len1==0)    return b;
-        if(len2==0)    return a;
+    #define ORD(a) (int)((a)-'0')
+    #define CHAR(a) (char)((a)+'0')
+    #define PROCESS(a)  \
+        y=a>>1;         \
+        a=CHAR(a&1);    
         
-        string res="";
-        int i,j,sum,k=0;
-        for(i=len1-1,j=len2-1; ; --i,--j){
-            if(j>=0 && i>=0){
-                sum=a[i]+b[j]-('0'+'0')+k;
-            }else if(j>=0){
-                sum=b[j]-'0'+k;
-            }else if(i>=0){
-                sum=a[i]-'0'+k;
-            }else break;
-            
-            k=(sum>>1);
-            res=(char)((sum&1)+'0')+res;
+    string addBinary(string a, string b) {
+        int la=a.length()-1, lb=b.length()-1;
+
+        int y=0;
+        while(la>=0 && lb>=0) {
+            a[la]=ORD(a[la])+ORD(b[lb])+y;
+            PROCESS(a[la]);
+            --la,--lb;
         }
-        while(k>0){
-            res=(char)((k&1)+'0')+res;
-            k >>= 1;
+        while(la>=0) {
+            a[la]=ORD(a[la])+y;
+            PROCESS(a[la]);
+            --la;
         }
-        return res;
+        while(lb>=0) {
+            a=char(ORD(b[lb])+y)+a;
+            PROCESS(a[0]);
+            --lb;
+        }
+        if(y)   a='1'+a;
+        // remove leading zero
+        int i=0;
+        la=a.length()-1;
+        while(i<la && a[i]=='0')    ++i;
+        return a.substr(i);
     }
 };
