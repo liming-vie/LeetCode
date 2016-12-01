@@ -1,42 +1,54 @@
+#define ISDIGIT(c) (c<='9'&&c>='0')
 class Solution {
 public:
-    bool e=false;   
     bool isNumber(string s) {
+        // remove leading and trailing blank
         int len=s.length();
-        for(int i=len-1; i>=0; --i){
-            if(s[i]==' ')
-                --len;
-            else    break;
-        }
-        if(len<=0)    return false;
+        while(len>0 && s[len-1]==' ') --len;
+        if(!len)    return false;
         int i=0;
-        while(s[i]==' ')    ++i;
-        bool dot=false;
+        while(s[i]==' ') ++i;
+        
+        bool fraction=false;
+        bool start=true;
         bool number=false;
-        bool start=false;
-        for( ;i<len;++i){
-            if(s[i]>='0' && s[i]<='9')  number=true;
-            if(start && s[i]!='e' && s[i]!='.' && (s[i]<'0' || s[i]>'9'))   return false;
-            
-            if(!start){
-                if(!(s[i]=='.'||s[i]=='-' || s[i]=='+' || (s[i]>='0' && s[i]<='9')))
-                    return false;
-                start=true;
-            }
-            
-            if(s[i]=='e'){
-                if(e)   return false;
-                e=true;
-                return number && isNumber(s.substr(i+1,len-i-1));
-            }  
-            if(s[i]=='.'){
-                if(dot || e) return false;
-                dot=true;
+        bool e=false;
+        for(; i<len; ++i) {
+            if(start && s[i] == 'e')    return false;
+            // can only occur when start or just after e
+            if((s[i] == '+' || s[i] == '-') && (!start && i && s[i-1]!='e'))
+                return false;
+            // acceptable char set
+            start=false;
+            if(!ISDIGIT(s[i]) && s[i]!='-' && s[i]!='+' && s[i]!='.' && s[i]!='e')
+                return false;
+            // judge number
+            if(ISDIGIT(s[i])) {
+                number=true;
                 continue;
             }
+            // no sign or dot can be in fraction part
+            if(fraction && (s[i] == '+' || s[i]=='-' || s[i]=='.'))    
+                return false;
+            // no dot or e can be after e
+            if(e && (s[i] == '.' || s[i] == 'e'))    
+                return false;
+                
+            if(s[i]=='e') {
+                // at least one number should befor e
+                if(!number) return false;
+                e=true;
+                // re check number and fraction
+                number=false;
+                fraction=false;
+            }
+            // no dot after e
+            if(s[i]=='.') {
+                if(e)   return false;
+                fraction=true;
+            }
+            
         }
-        if(number)
-            return true;
-        return false;
+        return number;
     }
 };
