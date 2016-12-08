@@ -1,22 +1,42 @@
 class Solution {
 public:
-    bool find(vector<int>&nums, int& target, int l, int r) {
-        if (l>r)    return false;
-        int mid;
-        while(l<r && nums[l]==nums[r])  ++l;
-        if (nums[l]<=nums[r]) {
-            while(l<=r){
+#define PROCL \
+while(l<r && nums[l]==nums[l+1])    \
+++l;
+
+#define PROCR \
+while(l<r && nums[r]==nums[r-1])    \
+--r;
+
+    bool func(vector<int>& nums, int l, int r, int target) {
+        if(l>r) return false;
+        
+        PROCL
+        PROCR
+        
+        int mid=(l+r)>>1;
+        if(nums[mid]==target)   return true;
+        
+        if(nums[l]<nums[r]) {
+            while(l<=r) {
                 mid=(l+r)>>1;
-                if(nums[mid]==target)   return true;
-                if(nums[mid]<target)    l=mid+1;
-                else    r=mid-1;
+                if(nums[mid]<target)  {
+                    l=mid+1;
+                    PROCL
+                }
+                else if(nums[mid]>target) {
+                    r=mid-1;
+                    PROCR
+                }
+                else    return true;
             }
             return false;
         }
-        mid=(l+r)>>1;
-        return find(nums,target, l,mid) || find(nums,target,mid+1,r);
+        
+        return func(nums, l, mid-1, target) || func(nums,mid+1, r, target);
     }
-    bool search(vector<int>& nums, int target) {
-        return find(nums,target, 0, nums.size()-1);
+
+    bool search(vector<int>& nums, int target) {        
+        return func(nums, 0, nums.size()-1, target);
     }
 };
