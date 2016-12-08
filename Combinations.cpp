@@ -1,30 +1,24 @@
 class Solution {
 public:
     vector<vector<int>> res;
-    vector<int> tres;
+    vector<int> cur;
     
-    void func(int vi, int n, int k){
-        if(!k){
-            res.push_back(tres);
+    void func(int vi, int n, int k) {
+        if(cur.size()==k)   {
+            res.push_back(cur);
             return;
         }
+        if(vi>n)   return;
         
-        while(n-vi+1>=k){
-            tres.push_back(vi);
-            func(++vi,n,k-1);
-            tres.pop_back();
-        }
+        cur.push_back(vi);
+        func(vi+1, n, k);
+        cur.pop_back();
+        
+        func(vi+1, n, k);
     }
-    
+
     vector<vector<int>> combine(int n, int k) {
-        if(k>n) return res;
-        if(k==n){
-            for(int i=1; i<=n; ++i)
-                tres.push_back(i);
-            res.push_back(tres);
-            return res;
-        }
-        func(1,n,k);
+        func(1, n, k);
         return res;
     }
 };
