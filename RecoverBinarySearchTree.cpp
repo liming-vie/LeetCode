@@ -9,21 +9,22 @@
  */
 class Solution {
 public:
-    vector<TreeNode*> nodes;
-    vector<int> nums;
-    
+    TreeNode *first, *second, *pre;
+
     void Inorder(TreeNode* root) {
         if(!root)   return;
         Inorder(root->left);
-        nodes.push_back(root);
-        nums.push_back(root->val);
+        if(pre && pre->val > root->val) {
+            if(!first) first=pre;
+            second=root;
+        }
+        pre=root;
         Inorder(root->right);
     }
 
     void recoverTree(TreeNode* root) {
         Inorder(root);
-        sort(nums.begin(), nums.end());
-        for(int i=0; i<nums.size(); ++i)
-            nodes[i]->val=nums[i];
+        if(first && second) 
+            swap(first->val, second->val);
     }
 };
