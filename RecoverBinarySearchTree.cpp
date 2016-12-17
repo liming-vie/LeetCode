@@ -9,21 +9,24 @@
  */
 class Solution {
 public:
-    TreeNode *first, *second, *pre;
-
-    void Inorder(TreeNode* root) {
-        if(!root)   return;
-        Inorder(root->left);
-        if(pre && pre->val > root->val) {
-            if(!first) first=pre;
-            second=root;
-        }
-        pre=root;
-        Inorder(root->right);
-    }
-
     void recoverTree(TreeNode* root) {
-        Inorder(root);
+        stack<TreeNode*> st;
+        TreeNode *move=root, *pre=NULL, *first=NULL, *second=NULL;
+        while(!st.empty() || move) {
+            if(move) {
+                st.push(move);
+                move=move->left;
+            } else {
+                move=st.top();
+                st.pop();
+                if(pre && pre->val>move->val) {
+                    if(!first)   first=pre;
+                    second=move;
+                }
+                pre=move;
+                move=move->right;
+            }
+        }
         if(first && second) 
             swap(first->val, second->val);
     }
