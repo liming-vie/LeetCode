@@ -1,35 +1,24 @@
 class Solution {
 public:
-    #define ORD(a) (int)((a)-'0')
-    #define CHAR(a) (char)((a)+'0')
-    #define PROCESS(a)  \
-        y=a>>1;         \
-        a=CHAR(a&1);    
-        
     string addBinary(string a, string b) {
-        int la=a.length()-1, lb=b.length()-1;
-
+        if (a.length() < b.length()) {
+            swap(a, b);
+        }
+        int i=a.length()-1, j=b.length()-1;
         int y=0;
-        while(la>=0 && lb>=0) {
-            a[la]=ORD(a[la])+ORD(b[lb])+y;
-            PROCESS(a[la]);
-            --la,--lb;
+        while(j>=0) {
+            a[i] = (a[i]-'0') + (b[j]-'0') + y;
+            y=(a[i] > 1);
+            a[i] = (a[i] & 1) + '0';
+            --i, --j;
         }
-        while(la>=0) {
-            a[la]=ORD(a[la])+y;
-            PROCESS(a[la]);
-            --la;
+        while (i>=0) {
+            a[i] = (a[i]-'0') + y;
+            y=(a[i] > 1);
+            a[i] = (a[i] & 1) + '0';
+            --i;
         }
-        while(lb>=0) {
-            a=char(ORD(b[lb])+y)+a;
-            PROCESS(a[0]);
-            --lb;
-        }
-        if(y)   a='1'+a;
-        // remove leading zero
-        int i=0;
-        la=a.length()-1;
-        while(i<la && a[i]=='0')    ++i;
-        return a.substr(i);
+        if (y) return '1' + a;
+        return a;
     }
 };
