@@ -6,28 +6,20 @@ public:
             ++count[c];
         }
         
-        multimap<int, char, greater<int>> mp; // count, task
-        for (auto &kv : count) {
-            mp.insert(make_pair(kv.second, kv.first));
-            kv.second = -1; // position
-        }
-        
-        int res = 0;
-        while (!mp.empty()) {
-            auto iter = mp.begin();
-            for(auto iter=mp.begin(); iter!=mp.end(); ++iter) {
-                if (count[iter->second] == -1 || count[iter->second] + n < res) {
-                    count[iter->second] = res;
-                    if (iter->first > 1) {
-                        mp.insert(make_pair(iter->first-1, iter->second));    
-                    }
-                    mp.erase(iter);
-                    break;
-                }
+        int mxcount = 0, mxnum = 0;
+        for (const auto&iter: count) {
+            if (mxcount == iter.second) {
+                ++mxnum;
+            } else if (mxcount < iter.second) {
+                mxcount = iter.second;
+                mxnum = 1;
             }
-            ++res;
         }
         
-        return res;
+        int partcount = mxcount - 1;
+        int partlen = n - mxnum + 1;
+        int left = tasks.size() - mxnum * mxcount;
+        int idle = max(0, partlen * partcount - left);
+        return tasks.size() + idle;
     }
 };
