@@ -1,28 +1,42 @@
 class Solution {
 public:
-#define ADDL() {++l; while(l<r && nums[l-1] == nums[l])  ++l;}
-#define MINUSR() {--r; while(l<r && nums[r+1] == nums[r]) --r;}
-
+    int addLeft(const vector<int> &nums, int left, int right) {
+        ++left;
+        while (left < right && nums[left] == nums[left-1]) {
+            ++left;
+        }
+        return left;
+    }
+    
+    int minusRight(const vector<int> &nums, int left, int right) {
+        --right;
+        while (left < right && nums[right] == nums[right+1]) {
+            --right;
+        }
+        return right;
+    }
+    
     vector<vector<int>> threeSum(vector<int>& nums) {
         sort(nums.begin(), nums.end());
         
-        vector<vector<int>> res;
         int n=nums.size();
-        for(int i=0; i<n; ++i) {
-            if(i && nums[i] == nums[i-1])   continue;
+        vector<vector<int>> res;
+        for (int i=0; i<n; ++i) {
+            if (i && nums[i] == nums[i-1])  {
+                continue;
+            }
+            
             int l=i+1, r=n-1;
-            int target=-nums[i];
-            while(l<r) {
-                int sum = nums[l]+nums[r];
-                if(sum < target) 
-                    ADDL()
-                else if(sum > target)
-                    MINUSR()
-                else {
-                    vector<int> cur{nums[i], nums[l], nums[r]};
-                    res.push_back(cur);
-                    ADDL()
-                    MINUSR()
+            while (l<r) {
+                int sum = nums[l] + nums[r] + nums[i];
+                if (sum == 0) {
+                    res.push_back({nums[i], nums[l], nums[r]});
+                    l=addLeft(nums, l, r);
+                    r=minusRight(nums, l, r);
+                } else if (sum < 0) {
+                    l=addLeft(nums, l, r);
+                } else {
+                    r=minusRight(nums, l, r);
                 }
             }
         }
