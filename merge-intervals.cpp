@@ -9,29 +9,30 @@
  */
 class Solution {
 public:
-    static bool cmp(const Interval &a, const Interval &b) {
-        return a.start<b.start;
+    static bool cmp(const Interval& a, const Interval& b) {
+        if (a.start == b.start) {
+            return a.end < b.end;
+        }
+        return a.start < b.start;
     }
     
     vector<Interval> merge(vector<Interval>& intervals) {
-        vector<Interval> res;
-        int n=intervals.size();
-        if(n==0)    return res;
+        if (intervals.size() < 2)   return intervals;
         
         sort(intervals.begin(), intervals.end(), cmp);
         
-        Interval cur=intervals[0];
-        for(int i=1; i<n; ++i) {
-            if(intervals[i].end <= cur.end)    continue;
-            if(intervals[i].start <= cur.end) {
-                cur.end = intervals[i].end;
-            }
-            else {
+        vector<Interval> res;
+        Interval cur(intervals[0]);
+        for (const auto& inter : intervals) {
+            if (cur.end < inter.start) {
                 res.push_back(cur);
-                cur=intervals[i];
+                cur = inter;
+            } else if (cur.end < inter.end) {
+                cur.end = inter.end;
             }
         }
         res.push_back(cur);
+        
         return res;
     }
 };
