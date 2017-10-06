@@ -6,23 +6,28 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
- 
-#define mk(a,b) make_pair(a,b)
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         multimap<int, ListNode*> mp;
-        for(int i=0; i<lists.size(); ++i)
-            if(lists[i]) 
-                mp.insert(mk(lists[i]->val, lists[i]));
-        ListNode* head=new ListNode(0), *move=head;
-        while(!mp.empty()) {
-            auto node = mp.begin();
-            mp.erase(node);
-            move->next=node->second;
-            move=move->next;
-            if(move->next) mp.insert(mk(move->next->val, move->next));
+        for(auto list:lists) {
+            if (list) {
+                mp.insert(make_pair(list->val, list));
+            }
         }
+        
+        ListNode *head = new ListNode(0);
+        ListNode *move = head;
+        while (!mp.empty()) {
+            auto cur = mp.begin();
+            if (cur->second->next) {
+                mp.insert(make_pair(cur->second->next->val, cur->second->next));
+            }
+            move->next = cur->second;
+            move = cur->second;
+            mp.erase(cur);
+        }
+        
         return head->next;
     }
 };
