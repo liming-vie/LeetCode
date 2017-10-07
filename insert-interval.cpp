@@ -10,31 +10,32 @@
 class Solution {
 public:
     vector<Interval> insert(vector<Interval>& intervals, Interval newInterval) {
-        bool flag=true;
-        for(auto i=intervals.begin(); i!=intervals.end(); ++i) {
-            if(newInterval.start<=i->start) {
+        int n=intervals.size();
+        for (auto i=intervals.begin(); i!=intervals.end(); ++i) {
+            if (newInterval.start < i->start) {
                 intervals.insert(i, newInterval);
-                flag=false;
                 break;
             }
         }
-        if(flag) {
+        if (intervals.size() == n) {
             intervals.push_back(newInterval);
         }
+        ++n;
         
-        vector<Interval> res;
-        Interval tmp=intervals[0];
-        for(int i=1; i<intervals.size(); ++i) {
-            if(intervals[i].end <= tmp.end) continue;
-            if(intervals[i].start <= tmp.end) {
-                tmp.end=intervals[i].end;
+        Interval cur(intervals[0]);
+        int idx = 0;
+        for (int i=1; i<n; ++i) {
+            if (cur.end < intervals[i].start) {
+                intervals[idx++] = cur;
+                cur = intervals[i];
             }
-            else {
-                res.push_back(tmp);
-                tmp=intervals[i];
+            else if (cur.end < intervals[i].end) {
+                cur.end = intervals[i].end;
             }
         }
-        res.push_back(tmp);
-        return res;
+        intervals[idx++] = cur;
+        
+        intervals.resize(idx);
+        return intervals;
     }
 };
