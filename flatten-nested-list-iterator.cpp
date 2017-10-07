@@ -18,36 +18,40 @@
 class NestedIterator {
 public:
     NestedIterator(vector<NestedInteger> &nestedList) {
-        vn = &nestedList;
+        move = &nestedList;
+        vi = 0;
     }
 
     int next() {
-        return (*vn)[vi++].getInteger();
+        return (*move)[vi++].getInteger();
     }
 
     bool hasNext() {
-        while(true) {
-            while (vn->size() == vi) {
-                if(st.empty()) {
+        while (true) {
+            while (vi == move->size()) {
+                if (st.empty()) {
                     return false;
                 }
-                vi = idx.top(); idx.pop();
-                vn = st.top(); st.pop();
+                auto top = st.top();
+                move = top.first;
+                vi = top.second;
+                st.pop();
             }
-            while (vi < vn->size() && !(*vn)[vi].isInteger()) {
-                st.push(vn);
-                vn = &((*vn)[vi].getList());
-                idx.push(vi+1);
+            while (vi < move->size() && !(*move)[vi].isInteger()) {
+                st.push(make_pair(move, vi+1));
+                move = &((*move)[vi].getList());
                 vi = 0;
             }
-            if (vi < vn->size())   return true;
+            if (vi < move->size()) {
+                return true;
+            }
         }
     }
+    
 private:
-    stack<int> idx;
-    stack<vector<NestedInteger>*> st;
-    int vi = 0;
-    vector<NestedInteger>* vn;
+    stack<pair<vector<NestedInteger>*, int>> st;
+    vector<NestedInteger> *move;
+    int vi;
 };
 
 /**
