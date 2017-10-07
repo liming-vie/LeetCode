@@ -9,16 +9,16 @@
  */
 class Solution {
 public:
-    bool valid(TreeNode* root, long long max, long long min) {
-        if(!root)   return true;
-        if(root->val >= max || root->val <= min)  return false;
-        return valid(root->left, root->val, min) && valid(root->right, max, root->val);
-    }
-
-    bool isValidBST(TreeNode* root) {
-        if(!root || (!root->left && !root->right))    return true;
-        long long max=0x7fffffff, min=-max-1;
+    bool check(TreeNode* root, long long min, long long max) {
+        if (!root)  return true;
+        if (root->val <= min || root->val >= max) return false;
         
-        return valid(root, ++max, --min);
+        return check(root->left, min, root->val) && check(root->right, root->val, max);
+    }
+    
+    bool isValidBST(TreeNode* root) {
+        long long min = 1<<31;
+        long long max = ~(1<<31);
+        return check(root, min - 1, max + 1);
     }
 };
