@@ -1,17 +1,23 @@
-#define VALID(c) ((c<='z' && c>='a') || (c<='Z'&&c>='A') || (c<='9'&&c>='0'))
-#define LOWERCASE(c) ((c<='Z'&&c>='A')?(c-'A'+'a'):c)
 class Solution {
 public:
+    inline bool valid(char c) {
+        return ((c>='a' && c<='z') || (c>='A'&&c<='Z') || (c>='0' && c<='9'));
+    }
+    
+    inline char lower(char c) {
+        if (c>='A'&&c<='Z') return c+'a'-'A';
+        return c;
+    }
+    
     bool isPalindrome(string s) {
-        int l=0, r=s.length()-1;
-        while(l<r) {
-            if(!VALID(s[l]))    ++l;
-            else if(!VALID(s[r]))   --r;
-            else {
-                if(LOWERCASE(s[l]) != LOWERCASE(s[r]))
-                    return false;
-                ++l;
-                --r;
+        int i=0, j=s.length() - 1;
+        while (i<j) {
+            if (!valid(s[i])) ++i;
+            else if (!valid(s[j])) --j;
+            else if (lower(s[i]) != lower(s[j])) {
+                return false;
+            } else {
+                ++i; --j;   
             }
         }
         return true;
