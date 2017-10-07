@@ -8,18 +8,29 @@
  */
 class Solution {
 public:
-	unordered_map<UndirectedGraphNode*, UndirectedGraphNode*> mp;
-
-	UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {
-		if(!node)	return NULL;
-        if(mp.find(node)!=mp.end())	return mp[node];
-
-        auto move=new UndirectedGraphNode(node->label);
-        mp[node]=move;
-        move->neighbors.reserve(node->neighbors.size());
-        for(auto neighbor:node->neighbors) {
-        	move->neighbors.push_back(cloneGraph(neighbor));
+    UndirectedGraphNode *cloneGraph(UndirectedGraphNode *node) {
+        if (!node)  return NULL;
+        
+        unordered_map<int, UndirectedGraphNode*> mp;
+        
+        queue<pair<UndirectedGraphNode*, UndirectedGraphNode*>> q;
+        UndirectedGraphNode* ret = new UndirectedGraphNode(node->label);
+        q.push(make_pair(ret, node));
+        mp[node->label] = ret;
+        
+        while (!q.empty()) {
+            auto front = q.front();
+            q.pop();
+            
+            for (UndirectedGraphNode* neighbor : front.second->neighbors) {
+                if (mp.find(neighbor->label) == mp.end()) {
+                    mp[neighbor->label] = new UndirectedGraphNode(neighbor->label);
+                    q.push(make_pair(mp[neighbor->label], neighbor));
+                }
+                front.first->neighbors.push_back(mp[neighbor->label]);
+            }
         }
-        return move;
+        
+        return ret;
     }
 };
