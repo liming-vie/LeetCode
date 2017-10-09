@@ -1,0 +1,2238 @@
+commit ae10d5b71fd1d6bfb8a5c767564858aabf89165d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 18:11:54 2017 +0800
+
+    238. Product of Array Except Self; 2017/10/09
+
+commit e4b9fd1b2bdd44b83c7f7d54983891ad0ae82230
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 18:00:58 2017 +0800
+
+    146. LRU Cache; 2017/10/09
+
+commit 4a464147389db70dd98fa786c5a8debc3ae78df6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 17:54:34 2017 +0800
+
+    renamed: LRUCache.cpp -> lru-cache.cpp
+
+commit 669b378c3ae6d5b68213858142b0fd291968d04b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 16:23:36 2017 +0800
+
+    680. Valid Palindrome II; 2017/10/09
+
+commit 9607f5358b415201714077cbd6f321b2ba1503f9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 16:13:17 2017 +0800
+
+    218. The Skyline Problem; heap; 2017/10/09
+
+commit a4cf01532535a4ec3db18603b40598361f961a79
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 13:33:30 2017 +0800
+
+    88. Merge Sorted Array; 2017/10/09
+
+commit 76a2dd2e4c43e51fb7c94af42294e9928a284849
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 13:32:59 2017 +0800
+
+    renamed: MergeSortedArray.cpp -> merge-sorted-array.cpp
+
+commit e7f01fd5a6cc05537f26aec600fa503c59c13b8f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 13:14:32 2017 +0800
+
+    49. Group Anagrams; 2017/10/09
+
+commit f1cfc78d1cad8ea7ad5ff39d5780912e4982d95c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 13:13:55 2017 +0800
+
+    renamed: GroupAnagrams.cpp -> group-anagrams.cpp
+
+commit 9f2501a9f9cf0f1621376dc4c7979b1ab2ad3f31
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 12:59:43 2017 +0800
+
+    38. Count and Say; 2017/10/09
+
+commit 6a90e1cacb6ff7d5516b4212e5048eac90111a71
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 12:59:09 2017 +0800
+
+    renamed: CountAndSay.cpp -> count-and-say.cpp
+
+commit 39648881aea93de52c6b025808e46640d462f46f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 11:49:47 2017 +0800
+
+    477. Total Hamming Distance; 2017/10/09
+
+commit e8ea95c14ce69bcc8e49f46a56ebf40e672c002a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 11:37:37 2017 +0800
+
+    398. Random Pick Index; reservoir sampling; 2017/10/09
+
+commit 5a9ac5db957217569bdfef09ad0036889f2e9e2a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 11:36:00 2017 +0800
+
+    renamed: RandomPickIndex.cpp -> random-pick-index.cpp
+
+commit ebba73e3e41b732f6ddd2f0a741ebda8ec1c44de
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 11:23:41 2017 +0800
+
+    236. Lowest Common Ancestor of a Binary Tree; 2017/10/09
+
+commit 3343166f8ec98c399ccf74422a04889779820320
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 9 10:59:08 2017 +0800
+
+    494. Target Sum; dp; 2017/10/09
+
+commit 29198c8694173cbf9f4fba19f1acc87c14d2fcb4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 8 22:39:17 2017 +0800
+
+    206. Reverse Linked List; 2017/10/08
+
+commit e1ec712bc3737c431566f801b1632d86d1a0bfdb
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 8 22:07:45 2017 +0800
+
+    renamed: ReverseLinkedList.cpp -> reverse-linked-list.cpp
+
+commit 9f140d97cdf6c965a0f40c97352f89d61b5c743c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 8 22:05:43 2017 +0800
+
+    79. Word Search; backtracking; 2017/10/08
+
+commit 8f23b7aa14e0fb170917a8c7383fa0e5f113dae4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 8 22:04:59 2017 +0800
+
+    renamed: WordSearch.cpp -> word-search.cpp
+
+commit 7a97b666bd78055dea97dfc161ee198ff318093f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 8 21:55:42 2017 +0800
+
+    13. Roman to Integer; 2017/10/08
+
+commit 45ef484d52817e5303456feb096d42867ecc86d4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 8 21:55:12 2017 +0800
+
+    renamed: RomanToInteger.cpp -> roman-to-integer.cpp
+
+commit a6104f2ab22e54d947cb3b5cb2a97ca99d590238
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 8 21:30:56 2017 +0800
+
+    33. Search in Rotated Sorted Array; 2017/10/08
+
+commit b8f7eaa9a7921b028cb974c4a9473a26f6a13bb5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 8 21:29:07 2017 +0800
+
+    renamed: SearchInRotatedSortedArray.cpp -> search-in-rotated-sorted-array.cpp
+
+commit 50419e31b61aae23aeceeacc322df2ff96c2d4eb
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 22:56:06 2017 +0800
+
+    133. Clone Graph; 2017/10/07
+
+commit e0d2437dfab7aba69f4a3eac3e540cbc92e12d90
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 22:55:18 2017 +0800
+
+    renamed: CloneGraph.cpp -> clone-graph.cpp
+
+commit 3647fc4a6665f6bf23aeacbb31a743ac042c00c7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 22:27:40 2017 +0800
+
+    57. Insert Interval; 2017/10/07
+
+commit 9d76ce04d33d9317d3f61560058282e331e2cd2b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 22:10:18 2017 +0800
+
+    renamed: InsertInterval.cpp -> insert-interval.cpp
+
+commit 6c2c5e1006e258c3840491b5873550fd095dc21e
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 22:08:58 2017 +0800
+
+    75. Sort Colors; three way partition; 2017/10/07
+
+commit 1df60564494d0894943965134c5cac80ba495ad2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 21:52:03 2017 +0800
+
+    renamed: SortColors.cpp -> sort-colors.cpp
+
+commit 29fda773af0f99bab365f8204de5d05ccaf43ffc
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 21:51:01 2017 +0800
+
+    43. Multiply Strings; 2017/10/07
+
+commit d698ac2c76b70c7fe7536e349e75b909dcb38f2c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 21:50:22 2017 +0800
+
+    renamed: MultiplyStrings.cpp -> multiply-strings.cpp
+
+commit 01bcc17b4ac9585d0d59cf84e08acc99220ebf04
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 21:05:07 2017 +0800
+
+    98. Validate Binary Search Tree; 2017/10/07
+
+commit 04ffa995c6f014f3cb88fb7f94e8b84591ff49f7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 21:04:19 2017 +0800
+
+    renamed: ValidateBinarySearchTree.cpp -> validate-binary-search-tree.cpp
+
+commit 79fc8e5d659ea5c1a52b89a66e88af04809cfbfd
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 20:59:23 2017 +0800
+
+    78. Subsets; bit manipulation; 2017/10/07
+
+commit adbab8f87afc113f22b6dcd4d9840b4100b016ba
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 20:55:56 2017 +0800
+
+    78. Subsets; backtracking; 2017/10/07
+
+commit b5c776ddf83e28f156a985e2568c669b573bea9d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 20:55:12 2017 +0800
+
+    renamed: Subsets.cpp -> subsets.cpp
+
+commit 23e43dab4faa38639a88ddbb9e2f950f3dc192c4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 20:46:16 2017 +0800
+
+    285. Inorder Successor in BST; 2017/10/07
+
+commit ba9b1a3f6284bb4b04c4a05def352c947cadbb64
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 20:10:47 2017 +0800
+
+    636. Exclusive Time of Functions; stack; 2017/10/07
+
+commit 2cc41ab438cb7eaf780bb9df2d625044fab6c8cc
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 19:14:26 2017 +0800
+
+    139. Word Break; O(n^2); 2017/10/07
+
+commit b946fa8b3fb0bef9ab6f5c4c96cf4779d2e7bdd8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 19:02:15 2017 +0800
+
+    renamed: WordBreak.cpp -> word-break.cpp
+
+commit b892a18e260854b9e6b3542e68a212057c75477b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 18:50:08 2017 +0800
+
+    125. Valid Palindrome; 2017/10/07
+
+commit 11a7600305c5f1a9474943a13a892421ea008103
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 18:49:42 2017 +0800
+
+    renamed: ValidPalindrome.cpp -> valid-palindrome.cpp
+
+commit 5fe2c1b41068a1ddc03e5580898580d848769d88
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 18:38:55 2017 +0800
+
+    252. Meeting Rooms; sort; 2017/10/07
+
+commit 74eff482a88b6eca177451af2bf47084627defa1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 18:33:06 2017 +0800
+
+    341. Flatten Nested List Iterator; 2017/10/07
+
+commit 02a5c28de6d31046809e73eb52c127f2a5ffff6e
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 18:32:36 2017 +0800
+
+    renamed: FlattenNestedListIterator.cpp -> flatten-nested-list-iterator.cpp
+
+commit a30da8121d3850d1a0e46e4ab47492b8746839f3
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 01:38:35 2017 +0800
+
+    211. Add and Search Word - Data structure design; Trie Tree; 2017/10/07
+
+commit 9b08ac16e77d91e4bee54cee46c7cbcb88e1a001
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 00:26:00 2017 +0800
+
+    543. Diameter of Binary Tree; 2017/10/07
+
+commit 26b92a2e97e9ea1d61c79e8926985f7f1028ede8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 00:16:23 2017 +0800
+
+    1. Two Sum; hash; 2017/10/07
+
+commit f6e326b1b8b04186261d7a4ddf8ec1c3af975c3d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 00:15:54 2017 +0800
+
+    renamed: TwoSum.cpp -> two-sum.cpp
+
+commit 3e1db33773419450195769bad8a7de706924c4ca
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 7 00:03:40 2017 +0800
+
+    161. One Edit Distance; 2017/10/07
+
+commit 74e9787e8e9309420b1cdc38dafa134a985f37b1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 23:50:33 2017 +0800
+
+    56. Merge Intervals; 2017/10/06
+
+commit 0045df9c80763ac84d24ac299a98ea41467baafc
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 23:49:55 2017 +0800
+
+    renamed: MergeIntervals.cpp -> merge-intervals.cpp
+
+commit 14e4b3373691d1e15c4c59c564fb9a33fc2e7f1a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 23:43:31 2017 +0800
+
+    121. Best Time to Buy and Sell Stock; 2017/10/06
+
+commit 665de5f9f63458144c3ecd1946ff02efa70cc0b6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 23:40:49 2017 +0800
+
+    renamed: BestTimeToBuyAndSellStock.cpp -> best-time-to-buy-and-sell-stock.cpp
+
+commit fe44c78bf04894b1a0c4598ae9414325b16df2d4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 23:39:35 2017 +0800
+
+    157. Read N Characters Given Read4; 2017/10/06
+
+commit 2fb4362b7288ddfc746f6eb674021d45f318c014
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 23:30:18 2017 +0800
+
+    23. Merge k Sorted Lists; 2017/10/06
+
+commit bc919dfd699483103128ccce65d7fa93a13927ff
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 23:14:01 2017 +0800
+
+    renamed: MergeKSortedLists.cpp -> merge-k-sorted-lists.cpp
+
+commit 431a04efa1408084eba240c8afcf0be7d8afd5e8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 23:09:25 2017 +0800
+
+    282. Expression Add Operators; dfs; 2017/10/06
+
+commit 941a1dbb04ab187f52996c0c170e7c53db7c3a41
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 22:26:03 2017 +0800
+
+    257. Binary Tree Paths; 2017/10/06
+
+commit ebefb59f89ab7d1856d4d9c0fcafbead50d904b2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 22:19:43 2017 +0800
+
+    76. Minimum Window Substring; O(n); 2017/10/06
+
+commit 9df215d3d192d7553ab6392f55a43f11eff661d0
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 22:18:41 2017 +0800
+
+    renamed: MinimumWindowSubstring.cpp -> minimum-window-substring.cpp
+
+commit 7f04545e6fc048b437792579aa32a5302f58e846
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 21:40:39 2017 +0800
+
+    200. Number of Islands; 2017/10/06
+
+commit 785a8f2115f91fa0d08192cb96b4acf254e8288d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 21:24:54 2017 +0800
+
+    277. Find the Celebrity; O(n); 2017/10/06
+
+commit c2946eecc96e1aa467ba52b14d5d3e91191e1fd9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 21:10:08 2017 +0800
+
+    278. First Bad Version; binary search; 2017/10/06
+
+commit 1a46664d15d4d53331992b80485d862311f3da0d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 20:19:49 2017 +0800
+
+    158. Read N Characters Given Read4 II - Call multiple times; 2017/10/06
+
+commit db53daf0ced7bbe5add9c5d852c9179e9806af7d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 01:09:45 2017 +0800
+
+    15. 3Sum; two pointer; 2017/10/06
+
+commit 39542ee40d09a825695eb99946dd5a33ee111c41
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 00:59:02 2017 +0800
+
+    renamed: 3Sum.cpp -> 3sum.cpp
+
+commit ff0f0e3da1ec5e35859ed7bc28d95ecde537863c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 00:57:37 2017 +0800
+
+    10. Regular Expression Matching; dp; 2017/10/06
+
+commit 594dd80c84547e3b3d234e09a3944446ad42c860
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 6 00:56:05 2017 +0800
+
+    renamed: RegularExpressionMatching.cpp -> regular-expression-matching.cpp
+
+commit a0524ee22787054c638e2cc36e7cdaa7f8d6ec15
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Oct 5 02:52:52 2017 +0800
+
+    314. Binary Tree Vertical Order Traversal; 2017/10/05
+
+commit 17a05738ce9b45377a4087cdd15d83529f78f73d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Oct 5 02:26:50 2017 +0800
+
+    297. Serialize and Deserialize Binary Tree; pre-order; 2017/10/05
+
+commit 9131e56450cfd53ed012548a729a4c2bf0237bc5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Oct 5 01:13:16 2017 +0800
+
+    91. Decode Ways; dp; 2017/10/05
+
+commit fc50fc2bbc200b04b347155e9aaaecc6f81a9b28
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Oct 5 01:11:37 2017 +0800
+
+    renamed: DecodeWays.cpp -> decode-ways.cpp
+
+commit ca65ca9376f15f50ff9dd57e11d1e89a1ca0f6ff
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Oct 3 00:50:53 2017 +0800
+
+    311. Sparse Matrix Multiplication; 2017/10/03
+
+commit 14933e30ed6c2442ffc8f9798e59a7842e6fe93e
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Oct 3 00:30:59 2017 +0800
+
+    17. Letter Combinations of a Phone Number; 2017/10/03
+
+commit c8d83f8451fce0d655aea5c435f0916b1b9958d0
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Oct 3 00:29:38 2017 +0800
+
+    renamed: LetterCombinationsOfAPhoneNumber.cpp -> letter-combinations-of-a-phone-number.cpp
+
+commit 3e78161fd4d2fd31855d9c21f8ba9900b4480ef6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Oct 3 00:18:10 2017 +0800
+
+    253. Meeting Rooms II; sort & greedy; 2017/10/03
+
+commit 0de065cd3e8489454753d589c4a470e3d053430f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Oct 3 00:04:24 2017 +0800
+
+    621. Task Scheduler; count slots, O(n); 2017/10/02
+
+commit d35daee8cb9c9fab25534f932c0e36689b4f958b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 2 23:40:48 2017 +0800
+
+    621. Task Scheduler; sort & greedy; 2017/10/02
+
+commit 5df5fae4922d4d663417069a65faa2c0f9b11e7c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 2 22:53:25 2017 +0800
+
+    67. Add Binary; 2017/10/02
+
+commit 72727c588f051fe05990650f789bb63078cb50a2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 2 22:52:45 2017 +0800
+
+    renamed: AddBinary.cpp -> add-binary.cpp
+
+commit 0025b3a1dd807a9530062b67b7f15c184345e193
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 2 22:51:59 2017 +0800
+
+    325. Maximum Size Subarray Sum Equals k; unordered_map; 2017/10/02
+
+commit 971fc576980226949645473994f92a68d39f18a4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 2 22:18:46 2017 +0800
+
+    273. Integer to English Words; 2017/10/02
+
+commit 6fc55f6a4b40ef36db411f544b4514ead599470d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 2 00:43:25 2017 +0800
+
+    301. Remove Invalid Parentheses; dfs; 2017/10/02
+
+commit 1e269a59a4038dcf11a50883daa89044467f51c2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 2 00:27:09 2017 +0800
+
+    283. Move Zeroes; 2017/10/02
+
+commit 0f98d34413d6ad626bbd6f9eb52f6eceab9debec
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 2 00:14:27 2017 +0800
+
+    179. Largest Number; cmp; 2017/10/02
+
+commit 90e3e5902c200459a9dd0995a08c847edf290873
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 1 23:30:56 2017 +0800
+
+    174. Dungeon Game; dp; 2017/10/01
+
+commit 4e7b21893b797a6033d6b9c53fd26cd2ad6ddd10
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 1 23:07:11 2017 +0800
+
+    173. Binary Search Tree Iterator; 2017/10/01
+
+commit 5aa84b40157ebd16ad2261a34713cf23911de513
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 1 23:00:51 2017 +0800
+
+    172. Factorial Trailing Zeroes; Find the number of 5; 2017/10/01
+
+commit 52bce292344491776688384d5ae17d1a0643594d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 1 22:58:54 2017 +0800
+
+    171. Excel Sheet Column Number; 2017/09/21
+
+commit ae53a69edfef11de9d0f44c72e18dad2ab9fface
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Jul 22 18:45:39 2017 -0700
+
+    169. Majority Element; 2017/07/22
+
+commit ae8d43f40c4c776246e068326dd7a99022b9a3a5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Jul 22 18:25:55 2017 -0700
+
+    168. Excel Sheet Column Title; 2017/07/22
+
+commit 1c84f6300389e03b44d8034dc17ee9d42e55910b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Jul 22 17:48:58 2017 -0700
+
+    167. Two Sum II - Input array is sorted; two pointer; 2017/07/22
+
+commit 17a04ad98be5b782c860abcde2a3ffcb88491802
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Jul 22 17:44:23 2017 -0700
+
+    166. Fraction to Recurring Decimal; 2017/07/22
+
+commit 25a28172d55d70cec732dbd26f79ae38b2eaf26c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Jul 22 17:01:16 2017 -0700
+
+    165. Compare Version Numbers; compare part by part; 2017/07/22
+
+commit c5f3ce90ec357b53e8d613ffeaeb41bc1975a6de
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Jul 22 16:17:36 2017 -0700
+
+    164. Maximum Gap; bucket sort; 2017/07/22
+
+commit 7380384a488190551cfd30481423eff076e0c795
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Jul 22 16:17:22 2017 -0700
+
+    162. Find Peak Element; binary search; 2017/07/18
+
+commit 153d14713e73a2f6ff2bcd438ba9b92ffa2d65b5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Apr 12 22:50:31 2017 +0800
+
+    162. Find Peak Element; use binary search; 2017/04/12
+
+commit df9d5b8829e51d1dd409663d641b68f78a24db59
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Apr 12 22:41:38 2017 +0800
+
+    160. Intersection of Two Linked Lists; Maybe use fast-slow pointer will be better; 2017/04/12
+
+commit e3127b83172ff0628f530ef6d2611a64788e245d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Mar 24 19:37:03 2017 +0800
+
+    155. Min Stack; use a minst to record minimal element; 2017/03/24
+
+commit 3078b22206386f8e1ce416f15ad5449e617347a8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Mar 24 18:44:39 2017 +0800
+
+    154. Find Minimum in Rotated Sorted Array II; 2017/03/24
+
+commit 8982edd97a7837f9d714d3d7fb9482e603fa4c19
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Mar 24 18:18:52 2017 +0800
+
+    153. Find Minimum in Rotated Sorted Array; no need use recursive function; 2017/03/24
+
+commit 3fa7267f3cabd3254e288f48e972c9afc31d6cf7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Mar 24 17:55:57 2017 +0800
+
+    152. Maximum Product Subarray; dp, record curmax and curmin; 2017/03/24
+
+commit cd537cab4aee2e70eab6d50cd122e726ae0641cc
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Mar 24 16:20:59 2017 +0800
+
+    151. Reverse Words in a String; space O(1); 2017/03/24
+
+commit 1b4ad018ee4b61f2374edb55b85137a9fc962b70
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Mar 24 15:54:25 2017 +0800
+
+    150. Evaluate Reverse Polish Notation; stack; 2017/03/24
+
+commit dbb61334b1f9e70783af7dbd4b6ab767bad4c105
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Mar 24 15:44:23 2017 +0800
+
+    149. Max Points on a Line; Should use long double; 2017/03/24
+
+commit 644481228267fc9165db01240ec3a435b92e859f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Mar 24 14:17:59 2017 +0800
+
+    148. Sort List; merge sort; 2017/03/24
+
+commit fd8cbb805a2ee21caf59b2097db6a87d921b59b8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Mar 23 19:08:49 2017 +0800
+
+    147. Insertion Sort List; 2017/03/23
+
+commit b22b688f6e034554baa66ee5fbec4b6cadc2d0ba
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Mar 14 20:11:50 2017 +0800
+
+    146. LRU Cache; use double linked list and hash map; 2017/03/14
+
+commit 0fd84b9456b12cc46ca22a11dbe54d508f1afeb6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 17:10:49 2017 +0800
+
+    142. Linked List Cycle II; 2017/02
+
+commit 4b58600076b8dc1685ca50999718efe9dc02bd7d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 17:07:02 2017 +0800
+
+    141. Linked List Cycle; 2017/02
+
+commit 8523d957178d1cdc8c9f7657bef3d8c1d9e460b4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 17:05:43 2017 +0800
+
+    140. Word Break II; 2017/02
+
+commit c0467a05bb8e67255336ed1f8d0e02bbb2bb030c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 17:04:50 2017 +0800
+
+    139. Word Break; 2017/02
+
+commit f2ec3710fb9793b80e5f46d5bba13e2255a272fb
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 17:03:44 2017 +0800
+
+    138. Copy List with Random Pointer; 2017/02
+
+commit d08e1574fd9c680747323ef3740618c6830bb31f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 16:58:45 2017 +0800
+
+    137. Single Number II; 2017/02
+
+commit bdb898a74935c868929dcf9956e2c54f0890fcbb
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 16:47:07 2017 +0800
+
+    136. Single Number; 2017/01
+
+commit 68fc5a8b792ce85f80bc42ed6eaea56884873204
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 16:44:39 2017 +0800
+
+    135. Candy; 2017/01
+
+commit 597fa51656c797e3be52e947d2999c6433ff4dc7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 16:44:02 2017 +0800
+
+    134. Gas Station; 2017/01
+
+commit 288553074e1494cd9a6112dfe90bb2d5c771a5be
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 16:43:16 2017 +0800
+
+    143. Reorder List; Can use two pointer to locate latter; 2017/03/13
+
+commit 87d491f45956d04410ce38d396b210c98d038604
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Mar 13 16:33:59 2017 +0800
+
+    133. Clone Graph; 2017/01
+
+commit aeb2985415c751e9616701e6c18ae327c318afeb
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Jan 16 19:32:36 2017 +0800
+
+    132. Palindrome Partitioning II; 2017/01/16
+
+commit 387bbe780a7d2a31e99248421092b693f338693f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Dec 20 14:04:19 2016 +0800
+
+    131. Palindrome Partitioning; dp; 2016/12/20
+
+commit 3a5e0e47aab72ba2d57f586d36522cbf7cce11cd
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 19:42:49 2016 +0800
+
+    130. Surrounded Regions; bfs; 2016/12/19
+
+commit 113d328fe33aef1d4846e67d117669082eaa64d4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 17:22:48 2016 +0800
+
+    129. Sum Root to Leaf Numbers; iterative; 2016/12/19
+
+commit 0e2a05def15c9ef62356bde4e3ad31d27d643b12
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 17:15:01 2016 +0800
+
+    129. Sum Root to Leaf Numbers; recursive; 2016/12/19
+
+commit 1f12469d86d0668fd7ce25058157793349327c4f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 17:07:50 2016 +0800
+
+    128. Longest Consecutive Sequence; use hashtable; 2016/12/19
+
+commit ccfc445eef4aba8edeb13b545b0416c9357afa70
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 16:47:21 2016 +0800
+
+    126. Word Ladder II; 2016/12/19
+
+commit 93e2d1411874ad6c434e3bae3c812710cf4af77b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 15:59:34 2016 +0800
+
+    127. Word Ladder; bfs; 2016/12/19
+
+commit c2b8366c22936fcf56a2d430b26a9bfeff4ad4a9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 14:20:48 2016 +0800
+
+    115. Distinct Subsequences; O(n^2); 2016/12/19
+
+commit 2c89acccbf3daa1b69f63d29e117dfc0e78fc9d1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 14:20:37 2016 +0800
+
+    115. Distinct Subsequences; O(n^3); 2016/12/19
+
+commit 3146534e8a0a9c9a44db864b99d048fee116c017
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 12:46:24 2016 +0800
+
+    125. Valid Palindrome; 2016/12/19
+
+commit 9a4bf40adda297fc2d0061177454948d4042138a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 12:36:27 2016 +0800
+
+    124. Binary Tree Maximum Path Sum; 2016/12/19
+
+commit de551fd8ad2bd2a679afac28108d181c1b87645d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 12:26:01 2016 +0800
+
+    123. Best Time to Buy and Sell Stock III; 2016/12/19
+
+commit 53dbfe631c72d3f1ed89297a79664e3ebd4bc408
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 11:24:03 2016 +0800
+
+    122. Best Time to Buy and Sell Stock II; 2016/12/19
+
+commit 57974e9d37648e319849115e0842a68183f1c03f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 10:01:52 2016 +0800
+
+    121. Best Time to Buy and Sell Stock; 2016/12/19
+
+commit 279b330335de7b081c18aa71eebef54921c1ec49
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 09:57:46 2016 +0800
+
+    120. Triangle; 2016/12/19
+
+commit 9cd88780ecfc9405e5d4acbce8e389604e2dfc72
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 09:48:53 2016 +0800
+
+    119. Pascal's Triangle II; 2016/12/19
+
+commit cff2fc5103d1ea0555c61420bd6c31496ef27379
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 19 09:31:47 2016 +0800
+
+    118. Pascal's Triangle; 2016/12/19
+
+commit 607bd424be364e329f32005aeabb1b74e4d531ae
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 20:08:34 2016 +0800
+
+    117. Populating Next Right Pointers in Each Node II; just the same to 116; 2016/12/18
+
+commit abe849e4179059c4ef8ffb90b803a86fb955a6b9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 20:05:17 2016 +0800
+
+    116. Populating Next Right Pointers in Each Node; 2016/12/18
+
+commit c7a30168951d5894ccd9b894cb2a2955f345d3fe
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 17:22:28 2016 +0800
+
+    114. Flatten Binary Tree to Linked List; use left child to record origin right child; 2016/12/18
+
+commit 95e1433b9814957d4304a0f081ad5fdb0ec1aa07
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 17:04:17 2016 +0800
+
+    113. Path Sum II; 2016/12/18
+
+commit edeb392c0c518edc19e091180104a2be3c1fc499
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 17:00:33 2016 +0800
+
+    112. Path Sum; 2016/12/18
+
+commit 98e6ea72b51a93d1fbd5a28101434e065e146cda
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 16:53:50 2016 +0800
+
+    111. Minimum Depth of Binary Tree; 2016/12/18
+
+commit d494b13713e00834abdd084415910900e77ca166
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 16:44:05 2016 +0800
+
+    108. Convert Sorted Array to Binary Search Tree; 2016/12/18
+
+commit 32767b4bdc6d54fb4ad2e4abf36344397c8c6e40
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 16:38:31 2016 +0800
+
+    107. Binary Tree Level Order Traversal II; 2016/12/18
+
+commit f3667946c570d19db618c55878b7759d7cde0bd2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 16:32:51 2016 +0800
+
+    106. Construct Binary Tree from Inorder and Postorder Traversal; 2016/12/18
+
+commit 66f46b8aec18bdf2a75f09d36902aa5210d95547
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 16:25:58 2016 +0800
+
+    110. Balanced Binary Tree; 2016/12/18
+
+commit 3cf155eedb179e20638305120ff4251233364115
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 16:17:28 2016 +0800
+
+    109. Convert Sorted List to Binary Search Tree; 2016/12/18
+
+commit c02c6d1470115b8554fa81dba51479e14e8a00c3
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 16:07:35 2016 +0800
+
+    105. Construct Binary Tree from Preorder and Inorder Traversal; 2016/12/18
+
+commit 4e1ed07d945bffdb1a2633812faea5b91ee9cc23
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Dec 18 15:44:54 2016 +0800
+
+    104. Maximum Depth of Binary Tree; 2016/12/18
+
+commit 0d64cc5e1a05336f8dbf838081cedb4a1e6c5178
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 21:40:16 2016 +0800
+
+    145. Binary Tree Postorder Traversal; 2016/12/17
+
+commit aeb5a9231f7de05cc8346244a5c9134ebfacc651
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 21:04:22 2016 +0800
+
+    144. Binary Tree Preorder Traversal; 2016/12/17
+
+commit 927161ce39a49da8fda799d59336272578973a5d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 21:00:10 2016 +0800
+
+    103. Binary Tree Zigzag Level Order Traversal; 2016/12/17
+
+commit 50d0c8d82c004bc47fcae1eb8f78e369e0e6f5c2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 18:29:17 2016 +0800
+
+    102. Binary Tree Level Order Traversal; 2016/12/17
+
+commit 85d385359a54a68017367654ac874b62eb0db0bd
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 18:20:51 2016 +0800
+
+    101. Symmetric Tree; Level Traversal; 2016/12/17
+
+commit 4bfde58f63b336b44b221fab45cead516d6e72ce
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 17:54:31 2016 +0800
+
+    100. Same Tree; 2016/12/17
+
+commit 1651deede0213ca9832964824c2a7e06496d6a05
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 17:54:14 2016 +0800
+
+    99. Recover Binary Search Tree; Use Morris Traversal; O(1) space; 2016/12/17
+
+commit f34710d1c54a38b70b796b9ee364fd292b7d4ac8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 16:57:09 2016 +0800
+
+    99. Recover Binary Search Tree; Use two pointer; use stack instread of recursive; still O(n) space; 2016/12/16
+
+commit d69be693c0e5d1e38617a59325a136ee257a5116
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 17 16:50:53 2016 +0800
+
+    99. Recover Binary Search Tree; Use two pointer; still O(n) space; 2016/12/16
+
+commit 017983afc37eeb5991d6fedd1605742ba5151669
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Dec 16 21:01:52 2016 +0800
+
+    99. Recover Binary Search Tree; O(n) space; 2016/12/16
+
+commit 1a1cd054aff258fee63b1ea73f3ba5c3cbccd996
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Dec 16 20:44:20 2016 +0800
+
+    98. Validate Binary Search Tree; 2016/12/16
+
+commit 008d6b609a7e19cdda3b75b6d77153eec4d15c41
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Dec 16 20:28:56 2016 +0800
+
+    97. Interleaving String; 2dp; 016/12/166
+
+commit 3c14f4d9899444d6e2ec0ff2937ffed6ee783d39
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Dec 16 19:42:11 2016 +0800
+
+    96. Unique Binary Search Trees; 2016/12/16
+
+commit 7436a627540019f4779f3ce3384215de2131abe9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Dec 16 18:21:16 2016 +0800
+
+    95. Unique Binary Search Trees II; dp; 2016/12/16
+
+commit f412b28d47a079eedd24c01a8a7a2b016bcef1fe
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Dec 16 14:07:10 2016 +0800
+
+    94. Binary Tree Inorder Traversal; 2016/12/16
+
+commit 151d06b66809ed294cfa3a11a2ef343aa54051f8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 15 22:43:25 2016 +0800
+
+    93. Restore IP Addresses; 2016/12/15
+
+commit ac995198297e1055fc5ea526df86160d37d3b9b6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 15 22:05:32 2016 +0800
+
+    91. Decode Ways; dp; 2016/12/15
+
+commit 4c47e31d1d267728d13cb13064057fccd7580f69
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 15 21:46:12 2016 +0800
+
+    90. Subsets II; no need recorde whole use array; 2016/12/15
+
+commit 4d503685f36b4247e30aad4c9b451a83ac2a21d3
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 15 21:42:38 2016 +0800
+
+    90. Subsets II; 2016/12/15
+
+commit 4e8bda0020461c05dfc39f5663ddb971d43165a3
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 15 21:33:23 2016 +0800
+
+    89. Gray Code; Another way; 2016/12/15
+
+commit 139989729699a2fec61dfa7f8c6f11ea6eac6a7d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 15 21:31:55 2016 +0800
+
+    89. Gray Code; 2016/12/15
+
+commit bbe83e0dd89b7d7aba5d12904abd4e2a02510898
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 15 21:09:29 2016 +0800
+
+    88. Merge Sorted Array; 2016/12/15
+
+commit 5f7c9c037d2aec3377a6397787b7f949b5638d4d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 15 20:54:08 2016 +0800
+
+    87. Scramble String; 2016/12/15
+
+commit 5515125603fc68b0d1c70bb69f5e67b8728e2c97
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Dec 13 20:38:06 2016 +0800
+
+    86. Partition List; 2016/12/13
+
+commit da3645575d6e66d9581b4eb619aa5b7b4004fc5c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Dec 13 20:20:49 2016 +0800
+
+    85. Maximal Rectangle; convert to similar problem as 84. Largest Rectangle in Histogram; 2016/12/13
+
+commit 621d3b981bb8676a05bc4214d9f41aae58fdea83
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Dec 13 20:05:10 2016 +0800
+
+    84. Largest Rectangle in Histogram; 2016/12/13
+
+commit e58546af5efb294e67642984f8b8cf4364aa151a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Dec 13 17:12:59 2016 +0800
+
+    83. Remove Duplicates from Sorted List; 2016/12/13
+
+commit 36456211611a68a7c7ff470613eeae68f1c9b43f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 19:34:06 2016 +0800
+
+    82. Remove Duplicates from Sorted List II; 2016/12/08
+
+commit fcdd7bdf05fbb522adf205c711dc70eca99aad4c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 14:46:15 2016 +0800
+
+    81. Search in Rotated Sorted Array II; 2016/12/08
+
+commit 0f659c3b5c060ff3e86c0acc3d9895ab58df9d23
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 14:45:45 2016 +0800
+
+    81. Search in Rotated Sorted Array II; 2015/12
+
+commit 1b88e13ab19f0ffe16f69a36c7a2b73088b5272a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 13:20:54 2016 +0800
+
+    80. Remove Duplicates from Sorted Array II; 2016/12/07
+
+commit 8132bcfb3228e4c52b66ae47341706e770113b90
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 13:20:36 2016 +0800
+
+    80. Remove Duplicates from Sorted Array II; 2015/10
+
+commit bb3d3b8a4cc3da96b56b664af5d19e9df7c67dc1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 13:06:01 2016 +0800
+
+    79. Word Search; 2016/12/07
+
+commit 68c390621577c4f914c0a3a01fdaeb2f45fba24c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 13:05:43 2016 +0800
+
+    79. Word Search; 2015/08
+
+commit 10fb7d026408680aef261d1e202d732e2345ea08
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 10:03:46 2016 +0800
+
+    78. Subsets; bit manipulation; 2016/12/07
+
+commit bb89c46a02493478d37dd275815d169f4f4471df
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 10:03:16 2016 +0800
+
+    78. Subsets; backtracking; 2016/12/07
+
+commit a6166ef5c0e1bd33414b55908b75b1f07032299f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 10:00:09 2016 +0800
+
+    77. Combinations; 2016/12/07
+
+commit fb6c5e884a4d01a594a1ac18bbf068f06b0ff3c1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 09:59:54 2016 +0800
+
+    77. Combinations; 2015/09
+
+commit 47f0262e18d66e459a2326b7723de960909631f1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 8 09:46:18 2016 +0800
+
+    76. Minimum Window Substring; 2016/12/07
+
+commit 27a6ac4486f3559f0b4522e726b263f14b099bec
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 5 15:56:55 2016 +0800
+
+    75. Sort Colors; use three-way partition; 2016/12/05
+
+commit 5154769303bcf3fed81d09f74d461a0c414cdaa4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 5 15:56:11 2016 +0800
+
+    75. Sort Colors; 2015/08
+
+commit 1f7d8da5d45f83a171c0fecdd59c36db2ed97d3b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 5 15:40:23 2016 +0800
+
+    74. Search a 2D Matrix; use macro define to simplify code; 2016/12/05
+
+commit a0abf61c2c3f1a90f07bda703d6641240e84e7a1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 5 15:39:09 2016 +0800
+
+    74. Search a 2D Matrix; 2015/08
+
+commit e998ccdaa858aa073ebcfa01de8791723bf160c8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 5 15:10:41 2016 +0800
+
+    73. Set Matrix Zeroes; use first row and column; 2016/12/05
+
+commit fd0d94e139ed5524be2048ff3f710b77863027a2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 5 15:09:58 2016 +0800
+
+    73. Set Matrix Zeroes; 2015/08
+
+commit ef65300024bbd62e74120a918e56fa3c705701ab
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 5 10:03:33 2016 +0800
+
+    72. Edit Distance; dp; 2016/12/05
+
+commit a90cee7d63b7c852dcee24f225b518d4ccb0ce57
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Dec 5 10:03:05 2016 +0800
+
+    72. Edit Distance; 2015/08
+
+commit 540b428466bce81d3008268d035084d1ca2f0be9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 3 20:21:00 2016 +0800
+
+    71. Simplify Path; 2016/12/03
+
+commit dc804fa487e3ecc8323f3c03cd5468f08f5bf44d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 3 20:20:20 2016 +0800
+
+    71. Simplify Path; 2015/08
+
+commit 3a70b0d969aa32a84dfdbda462513bb322ec20e2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 3 19:54:09 2016 +0800
+
+    70. Climbing Stairs; 2016/12/03
+
+commit d1229f85257e9f4dfac0cd8907ea3b511e9448a6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 3 19:53:56 2016 +0800
+
+    70. Climbing Stairs; 2015/04
+
+commit ee56ba76f2abc527daf04f928a2e3e88f4617c71
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 3 19:50:46 2016 +0800
+
+    69. Sqrt(x); use unsigned long long to avoid overflow; 2016/12/03
+
+commit 6b3d85550b4487f33cf2d78a6a51461f157a9175
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 3 19:50:05 2016 +0800
+
+    69. Sqrt(x); 2015/08
+
+commit 33311428500e857c0e80b5a83da04fb7c6dbfee3
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 3 17:18:28 2016 +0800
+
+    68. Text Justification; 2016/12/03
+
+commit 898b7887bbb543ef33ead3a0c8f65a9a732222b2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Dec 3 17:17:56 2016 +0800
+
+    68. Text Justification; 2015/08
+
+commit 56f9267d5f809fc70e0de0e63015d5cfb08ca214
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 23:50:52 2016 +0800
+
+    67. Add Binary; 2016/12/01
+
+commit 7e63309d0177c9cf1706ceac08c25baf0e610229
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 23:50:11 2016 +0800
+
+    67. Add Binary; 2015/04
+
+commit 697c8830374deff9243aab5b537dd3f2fa7e3e70
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 23:27:14 2016 +0800
+
+    66. Plus One; 2016/12/01
+
+commit a6e3085097972705b1f723c39e35f9a893e22e84
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 23:27:00 2016 +0800
+
+    66. Plus One; 2015/08
+
+commit 9b1b9a7aa64a0712dc70a1840201ee6edbc7f558
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 23:21:15 2016 +0800
+
+    65. Valid Number; 2016/12/01
+
+commit d1c34ca927c836daf1bc0047cb6ddb59e0b1eb9d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 23:19:56 2016 +0800
+
+    65. Valid Number; 2015/09
+
+commit 6c227c4ee4199042fd278191c32712dd1bcb527b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 15:13:41 2016 +0800
+
+    64. Minimum Path Sum; 2016/12/01
+
+commit e808290f83fd3c6c4c144e90e83bbeeb8374f12d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 15:12:23 2016 +0800
+
+    64. Minimum Path Sum; 2015/08
+
+commit a996d92b37c19fc95229260a1946bb3a42d2b02f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 15:01:10 2016 +0800
+
+    63. Unique Paths II; one dimensional dp; 2016/12/01
+
+commit a490a996374289f801e2d6e79411664e6a4dd668
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 15:00:04 2016 +0800
+
+    63. Unique Paths II; two dimensional dp; 2015/08
+
+commit 494a05010e83c4eb53f005bad2b66dcf2a7d0613
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 14:51:21 2016 +0800
+
+    62. Unique Paths; use one dimension array; 2016/12/01
+
+commit 994048b1e7497ce5999da71e729fdde5df8f3612
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 14:37:29 2016 +0800
+
+    62. Unique Paths; use two dimension array; 2015/08
+
+commit fec99e0ea35c5f25cad8799df461469d3acfe109
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 14:31:50 2016 +0800
+
+    61. Rotate List; 2016/12/01
+
+commit 5df41ce2acc42cc3d9135893fcdf3bc42de39e30
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 14:31:31 2016 +0800
+
+    61. Rotate List; 2015/08
+
+commit e221eb65c954fd2f1975a8e9955f35aa000e022b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 13:50:23 2016 +0800
+
+    60. Permutation Sequence; 2016/12/01
+
+commit 650f958dc2d13e82aa72b3f2cdc070a773bbef59
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Dec 1 13:49:49 2016 +0800
+
+    60. Permutation Sequence; 2015/09
+
+commit 65976f459f6b8eef28b82d6fa8e6eae3af2dca0d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 18:17:37 2016 +0800
+
+    58. Length of Last Word; 2016/11/29
+
+commit d9028819c894ce6dd585a1b5d79ba94b5ceb961c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 18:17:20 2016 +0800
+
+    58. Length of Last Word; 2015/08
+
+commit 2f9e9a00a7e2ca8bc9153d6dd3e3a3805f6a7643
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 18:13:22 2016 +0800
+
+    57. Insert Interval; insert then merge; 2016/11/29
+
+commit 71c3fd25f68dab8b1bce45568a75598632582205
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 18:12:45 2016 +0800
+
+    57. Insert Interval; 2015/08
+
+commit a099553ab4aa01cc6257116205440f1d3103e5b1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 17:45:24 2016 +0800
+
+    56. Merge Intervals; 2016/11/29
+
+commit fecec50b9f2512950c7f0cdd78f163e4b6707ff4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 17:45:06 2016 +0800
+
+    56. Merge Intervals; 2015/07
+
+commit 8f04a4485fbf9f65cc73358e6dee1e0fa3e8aca1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 16:30:04 2016 +0800
+
+    55. Jump Game; 2016/11/29
+
+commit b24d1475a05633e6ce9703858bbf182fc20efd1f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 16:29:54 2016 +0800
+
+    55. Jump Game; 2015/08
+
+commit 5f90d0e5c426944097a46524270cb4d339e9b926
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 16:19:26 2016 +0800
+
+    53. Maximum Subarray; 2016/11/29
+
+commit 99daabe6f8ddffd380b9a55d99157dca04ac8746
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 16:17:14 2016 +0800
+
+    50. Pow(x, n); 2016/11/29
+
+commit a363cdfb4fba35d9678e1e5e8f0503a3a8d4598c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 15:43:14 2016 +0800
+
+    49. Group Anagrams; use sort and hashtable; 2016/11/29
+
+commit 7252905ec0ee66ed29a65c627d90af6badd30baa
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 15:33:07 2016 +0800
+
+    48. Rotate Image; 2016/11/29
+
+commit c1e253f600429dd075d6836b94c9804581831dd8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 14:11:04 2016 +0800
+
+    48. Rotate Image; 2015/07
+
+commit 7f4a127e450540c134944f4a882d317fdb9cb862
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 14:08:10 2016 +0800
+
+    47. Permutations II; use next permutation; 2016/11/29
+
+commit 44f5998076626c1f50e31dc122ef4b31d3ddc625
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 13:54:05 2016 +0800
+
+    47. Permutations II; nums[vi,i) != nums[i]; 2016/11/29
+
+commit 19c9edc5db677559c51bd049ddb4bd5725eed7e1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 13:52:38 2016 +0800
+
+    47. Permutations II; 2015/07
+
+commit 7d79ab238066dfcc9d57f78eb04523a01a85d6be
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 11:11:45 2016 +0800
+
+    46. Permutations; construct a tree with swap; 2016/11/29
+
+commit eea306b0e29e3e87b7b389af2d53e98db4322b79
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 29 11:06:52 2016 +0800
+
+    46. Permutations; 2016/11/29
+
+commit e3e08ffb65520ba816dc622cf954b2af4ad5c649
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Nov 28 19:41:15 2016 +0800
+
+    45. Jump Game II; 2015/08
+
+commit a775a0d14af7fbb814699fb789dd88baaa6d1da2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Nov 27 23:02:34 2016 +0800
+
+    44. Wildcard Matching; 2016/11/27
+
+commit 97d9bc41dddd716b56a3eb0d548fccd95225ad75
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Nov 27 23:01:03 2016 +0800
+
+    44. Wildcard Matching; 2015/08
+
+commit 818e2d0ac971d7d34e03b44de313876e498f1d21
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Nov 27 22:42:55 2016 +0800
+
+    1. Two Sum; Use hash table to achieve O(n) time but with O(n) space; 2016/11/27
+
+commit 221e25e98dc16be359bbdcbfe1fde3014f307640
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Nov 27 22:17:57 2016 +0800
+
+    43. Multiply Strings; 2016/11/27
+
+commit 951297c6594f1a5039944eadbb9775a0e5c56616
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 17:37:54 2016 +0800
+
+    43. Multiply Strings; 2015/03
+
+commit 91b880cc3fbc4ea408e6fbb814db4314ffa5ed1c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 17:12:53 2016 +0800
+
+    42. Trapping Rain Water; 2015/03
+
+commit f0749eae08bcae32d20ac98195eee0d7b3501418
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 15:59:23 2016 +0800
+
+    41. First Missing Positive; use minus number to mark existing one; 2016/11/22
+
+commit 5c6c0822b8fa2830e89784520b05e27f92dae4c1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 15:56:10 2016 +0800
+
+    41. First Missing Positive; 2015/03
+
+commit 523882afe096c2b2bffa38c2b303a79bc46012ca
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 15:39:38 2016 +0800
+
+    40. Combination Sum II; Use a boolean array to check if use; 2016/11/22
+
+commit b282704d799520b189dcfa83613d2c7db32a6491
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 15:37:30 2016 +0800
+
+    40. Combination Sum II; Use set to avoid duplicate combinations; 2015/03
+
+commit 967d0ecc04f72d5e594e1efa5bd6640f235f7d52
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 15:25:45 2016 +0800
+
+    39. Combination Sum; 2016/11/22
+
+commit 1665f7d6d7dd428b52e445dca530d6dd7a3482c9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 15:24:39 2016 +0800
+
+    39. Combination Sum; 2015/03
+
+commit 86d959c46702262625d62348f247a93b980ee93f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 14:35:32 2016 +0800
+
+    38. Count and Say; 2016/11/22
+
+commit b86390bf7f10d29889c156871e9e7591e716aca3
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 14:34:47 2016 +0800
+
+    38. Count and Say; 2015/03
+
+commit f8119f6aba697b266ea74dcad140b91da4bc56d7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Nov 22 14:22:27 2016 +0800
+
+    37. Sudoku Solver; Use boolean variable to check if valid; 2016/11/22
+
+commit 0300f9e690a1c61f883f7788fc38f70b5d126b05
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Nov 13 21:13:06 2016 +0800
+
+    37. Sudoku Solver; 2015/03
+
+commit f80d86a74d2a32c6241f111ff2ed83f376e58dd2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Nov 13 21:09:50 2016 +0800
+
+    36. Valid Sudoku; 2015/03
+
+commit 98469d41b390f5756a249b7ce67f4d83531b33fb
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Nov 13 20:55:19 2016 +0800
+
+    35. Search Insert Position; Binary search; 2016/11/13
+
+commit d1d077bcfa29edafa4e696c049620a690d0d4d2d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Nov 13 20:54:56 2016 +0800
+
+    35. Search Insert Position; 2015/03
+
+commit 083f1833903a8eca02dc5f4f143612e3f4bb1174
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 20:27:12 2016 +0800
+
+    34. Search for a Range; 2016/11/03
+
+commit aaf89c70253dc9cb5393735fe837e24227cb8280
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 20:26:54 2016 +0800
+
+    34. Search for a Range; 2015/04
+
+commit 167a89ef6603d223705adaf4d14d16537e4b324d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 20:19:32 2016 +0800
+
+    33. Search in Rotated Sorted Array; 2016/11/03
+
+commit ab0ce72962291919d3e13f0f61441ff66cb5e921
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 20:18:56 2016 +0800
+
+    33. Search in Rotated Sorted Array; 2015/03
+
+commit 606b629f940453103177cbe8e36791b3cd0fe61d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 20:04:16 2016 +0800
+
+    32. Longest Valid Parentheses; 2016/11/03
+
+commit 9270d0f30cf10e6557658ab2018ee753bcc8054b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 20:00:30 2016 +0800
+
+    32. Longest Valid Parentheses; 2015/04
+
+commit 17e02f46f28406bb59f8655b7892c9a07b902348
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 19:44:42 2016 +0800
+
+    31. Next Permutation; 2016/11/03
+
+commit 1ea0c10fa7e01c9ea79ff6911916be054277dd28
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 19:34:14 2016 +0800
+
+    31. Next Permutation; 2015/09
+
+commit afc785ab5e30f10a85c0e69c9aedb6e02a8fb540
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 19:27:35 2016 +0800
+
+    30. Substring with Concatenation of All Words; 2016/11/03
+
+commit 012bef71ece800c616bc1a692f256062baf864cd
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 18:29:39 2016 +0800
+
+    3. Longest Substring Without Repeating Characters; 2016/11/03
+
+commit b98161f5bd80d9c0cee95ee1f731d3a727004717
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 18:18:45 2016 +0800
+
+    30. Substring with Concatenation of All Words; 2015/03
+
+commit 122b7bcb29066b5c5a86832cb8ec8bb1156489a8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 18:05:59 2016 +0800
+
+    29. Divide Two Integers; 2016/11/03
+
+commit 97f43522980917420f4a4375b417902598c56e3d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 17:37:09 2016 +0800
+
+    29. Divide Two Integers; 2015/03
+
+commit 4c793b14adc1f18f220609f723eb125b29814da0
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 17:34:27 2016 +0800
+
+    28. Implement strStr(); KMP; 2016/11/03
+
+commit 204bc83a9505a183a4e6a69e14bfa5a1f5eb226d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 17:14:25 2016 +0800
+
+    28. Implement strStr(); 2015/03
+
+commit c7b1387599ad78ecb919a3c787281b4d38959781
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 17:13:18 2016 +0800
+
+    27. Remove Element; 2016/11/03
+
+commit f8df421766fe5738a78779435d4d46f508582de7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 17:13:05 2016 +0800
+
+    27. Remove Element; 2015/03
+
+commit 5b10bb047e50429a155addb92168bb6a679684f6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 17:09:59 2016 +0800
+
+    26. Remove Duplicates from Sorted Array; 2016/11/03
+
+commit 94f5f517429407acd659f2940b30deebedc95f9f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 16:52:43 2016 +0800
+
+    26. Remove Duplicates from Sorted Array; 2015/03
+
+commit 52da80fa5de8cc613f602393a4b9343929986152
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Nov 3 16:44:22 2016 +0800
+
+    25. Reverse Nodes in k-Group; 2015/11/03
+
+commit 7ce2bb83b96bfb973ee0984f1917543ddea78315
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 17:11:21 2016 +0800
+
+    25. Reverse Nodes in k-Group; 2015/03
+
+commit b3b60f30331e7ec9dd49c0bd20766acd1855fe8a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 17:03:13 2016 +0800
+
+    92. Reverse Linked List II; 2016/10/23
+
+commit 64cb406216a76d7231570301ffe2d878c987cbe9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 16:38:36 2016 +0800
+
+    92. Reverse Linked List II; 2015/10
+
+commit c9d1d46cd7926043333e91546e8e17101b205c55
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 16:36:40 2016 +0800
+
+    206. Reverse Linked List; 2016/10/23
+
+commit c6c1bd8492031d54fd211252a9b65292430a2797
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 16:30:11 2016 +0800
+
+    206. Reverse Linked List; 2015/08
+
+commit f4d28d2c803dc423be81ea52f5a630627d40b596
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 16:27:33 2016 +0800
+
+    24. Swap Nodes in Pairs; 2016/10/23
+
+commit 9b15966738bccd2e9bf1f823cd169bdecf2b2f7e
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 16:07:55 2016 +0800
+
+    24. Swap Nodes in Pairs; 2015/03
+
+commit 1ecb239076e83bab7db37e1ec8e8689b837f6619
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 15:59:14 2016 +0800
+
+    23. Merge k Sorted Lists; Use heap, O(nklogk); 2016/10/23
+
+commit 9f97e69571efbbad29dad6f665ea04850e1394b5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 15:48:40 2016 +0800
+
+    23. Merge k Sorted Lists; 2015/03
+
+commit 3c69d5b1d9ee1423538cf207b037df2893d48317
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 15:46:27 2016 +0800
+
+    22. Generate Parentheses; Catalan number; 2016/10/23
+
+commit 863f8ecea7d0b91c4fab4b5f2f78adb04cc19484
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 15:45:57 2016 +0800
+
+    22. Generate Parentheses; 2015/03
+
+commit a67f8052ffd2120d33381939f36f1d340c0cdf69
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 15:13:34 2016 +0800
+
+    21. Merge Two Sorted Lists; 2016/10/23
+
+commit 658f454f319a0f73863b13274084e3409e904ce4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 23 15:13:10 2016 +0800
+
+    21. Merge Two Sorted Lists; 2015/03
+
+commit fa1e38dbc82e74dec03c03143b36e3f597818f50
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 22 18:31:17 2016 +0800
+
+    20. Valid Parentheses; 2016/10/22
+
+commit 59dd322c8408bd72f9340a20837f5cdb2bb0519d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 22 18:19:07 2016 +0800
+
+    20. Valid Parentheses; 2015/03
+
+commit 325d38c6fc115fcdd29c31e8bfadbc10ca10c635
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 22 18:18:05 2016 +0800
+
+    19. Remove Nth Node From End of List; 2016/10/22
+
+commit 203b9e37b8ad5c58d9c957f88f84d6160caf0ad1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 22 18:15:08 2016 +0800
+
+    19. Remove Nth Node From End of List; 2015/03
+
+commit a0da956a52fbe727ee1a5160d96a14a92f1c52a6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 22 17:38:45 2016 +0800
+
+    18. 4Sum; make it O(n^2); 2016/10/22
+
+commit d4ddda9f605b27283d32ad9ac9485e6b3c651fe1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Oct 22 15:25:10 2016 +0800
+
+    18. 4Sum; 2015/03
+
+commit d11537e7f22a30312d88d70648ea2f674cc8a659
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 21 23:07:08 2016 +0800
+
+    17. Letter Combinations of a Phone Number; 2016/10/21
+
+commit fb6a5986a7dddd81b76a62da8dbcf3bee3d95223
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 21 22:59:56 2016 +0800
+
+    17. Letter Combinations of a Phone Number; 2015/03
+
+commit 4ff65281ebe19bbe223e4c73f98fcf07c60be599
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 21 22:55:17 2016 +0800
+
+    16. 3Sum Closest; 2016/10/21
+
+commit 8fb61e06a33173877ed25d1cf9fceb67eddcbe15
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 21 22:42:15 2016 +0800
+
+    15. 3Sum; 2016/10/21
+
+commit 0d60a50d61655121d467085737f24d5c2442caf5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 16:22:21 2016 +0800
+
+    14. Longest Common Prefix; 2016/10/16
+
+commit 360ef25c1219115247a9e08033b966865fd34f65
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 16:20:12 2016 +0800
+
+    14. Longest Common Prefix; 2015/03
+
+commit 5ffe673051c14cb719e936ed12f76b35907be89d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 16:13:46 2016 +0800
+
+    13. Roman to Integer; 2016/10/16
+
+commit de698b115c33866988a16d0c3a01af4c4ed46117
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 15:53:19 2016 +0800
+
+    12. Integer to Roman; 2016/10/16
+
+commit 61fb853c92ac91f2365a198d745bebe93b745bb7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 15:31:53 2016 +0800
+
+    11. Container With Most Water; 2016/10/16
+
+commit c1b0e0ea0505a44ebc592b5cc78c786af6db6b31
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 15:31:37 2016 +0800
+
+    11. Container With Most Water; 2015/03
+
+commit 05de4ff288342c4554c0df10bc5d1f2d102a1a95
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 14:48:21 2016 +0800
+
+    59. Spiral Matrix II; 2016/10/16
+
+commit 20d34ccef432b123813d93212e0871001ca1d3c6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 14:47:59 2016 +0800
+
+    59. Spiral Matrix II; 2015/08
+
+commit 69062c4075e04a77d2db84573ba455774a1dc775
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 14:37:13 2016 +0800
+
+    54. Spiral Matrix; 2016/10/16
+
+commit 5147f361f6f6acc59aca824c77d731eec222a34c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 16 14:35:35 2016 +0800
+
+    54. Spiral Matrix; 2015/08
+
+commit 0a7cd03f2c1a12f7c89bf34a549240fa8a61f7d8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 14 14:49:53 2016 +0800
+
+    53. Maximum Subarray; greedy; 2016/10/14
+
+commit 7987e9e881deaf28cf8c0767a91a9ed628347b9a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Oct 14 14:47:54 2016 +0800
+
+    53. Maximum Subarray; 2015/08
+
+commit 446edeb23588b05377ea9333182d544c2f410ae5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Oct 13 20:54:15 2016 +0800
+
+    52. N-Queens II; backtracking; 2016/10/13
+
+commit 2f1ec3ae62dc331d8372ad4894d554ea7674845c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Oct 13 20:52:30 2016 +0800
+
+    52. N-Queens II; backtracking; 2015/08
+
+commit c2a17797f1e4b66120a2d4315b425c33e8626bf0
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Oct 13 20:50:44 2016 +0800
+
+    51. N-Queens; backtracking; 2016/10/13
+
+commit e8c3f93c2f834ec75be14e965bffdbfab7fe1ee9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Oct 13 20:48:40 2016 +0800
+
+    51. N-Queens; backtracking; 2015/08
+
+commit 369490667790d3b0c63526c0b14cbae755e8dfac
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Oct 12 18:47:33 2016 +0800
+
+    326. Power of Three; Math problem, log3(n) = log10(n) / log10(3); 2016/10/12
+
+commit 67d74e59765dfc73c6eb64aad25ea4bed5161f76
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Oct 12 16:53:40 2016 +0800
+
+     324. Wiggle Sort II; re-arrange the index and use three way partition, make it O(n) time and O(1) space; 2016/10/11
+
+commit 824db2ae0752994513727173cde15b7e3acee058
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Oct 11 16:58:01 2016 +0800
+
+    324. Wiggle Sort II; use qsort to achieve average O(n); 2016/10/11
+
+commit b45725cb9c89e947aa94035f342bcdad84331648
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Oct 11 14:17:14 2016 +0800
+
+    345. Reverse Vowels of a String; 2016/10/11
+
+commit 62ea231d7d862c20646b218f3e6a2d29b74b4b2c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 9 23:07:30 2016 +0800
+
+    395. Longest Substring with At Least K Repeating Characters; use invalid character as spliter; 2016/10/09
+
+commit 0f529e094bfcd0dd69f94a248c37c5f9a1df9d98
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 9 22:43:03 2016 +0800
+
+    375. Guess Number Higher or Lower II; use dp not binary search; 2016/10/09
+
+commit a52d12c5fa4f61111ce7a81d5059b556435e97aa
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 9 22:07:19 2016 +0800
+
+    386. Lexicographical Numbers; 2016/10/09
+
+commit 6a95898f6dd197ef29e59ebd228ce346359f3de4
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 3 16:46:57 2016 +0800
+
+    341. Flatten Nested List Iterator; Use stack; 2016/10/03
+
+commit f64a05f78d5914fb7b81d9ec45543deb376277ae
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 3 15:59:30 2016 +0800
+
+    376. Wiggle Subsequence; Greedy; 2016/10/03
+
+commit 41ca7d9de06d38f17120cd5ed2d769ed314b5d0b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Oct 3 00:48:21 2016 +0800
+
+    376. Wiggle Subsequence; use dp, in O(n^2); 2016/10/03
+
+commit 3ed5e390939913b4471a6f9f956abdd135d500d7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 2 23:31:42 2016 +0800
+
+    398. Random Pick Index; Reservoir sample; 2016/10/02
+
+commit 8dd41a83243041b74260a3c8ae10971b357e7cde
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 2 21:06:52 2016 +0800
+
+    331. Verify Preorder Serialization of a Binary Tree; Use stack; 2016/10/02
+
+commit f829948e443622b19ab27356364823eaa56ac1b5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 2 20:44:18 2016 +0800
+
+    331. Verify Preorder Serialization of a Binary Tree; #nullNode == #other; 2016/10/02
+
+commit 77d7c8fc1ca8ae747368d53fc0458c3c3fef83d6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sun Oct 2 19:56:30 2016 +0800
+
+    393. UTF-8 Validation; 2016/10/02
+
+commit 52d1c345ed291b54f88675d8c301d3bd4ab1c532
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Sep 30 14:21:19 2016 +0800
+
+    384. Shuffle an Array; 2016/09/30
+
+commit abbd2106e085a8307a5f6cbef1aba216e96ae19d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Aug 19 13:32:28 2016 +0800
+
+    338. Counting Bits; ret[i] = ret[i/2] + ((i%2) == 1); 2016/08/19
+
+commit c025fee44e2d382893bb345df34b5a807ab1718f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Aug 19 13:27:36 2016 +0800
+
+    338. Counting Bits; 2016/08/19
+
+commit f1ed6ad02bb38e5ef558f732050b05058dfb511e
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Aug 18 17:26:18 2016 +0800
+
+    342. Power of Four; 2016/08/18
+
+commit 0494c671dce0b269a78b0230b2360c293fef1f9f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Aug 18 16:54:45 2016 +0800
+
+    374. Guess Number Higher or Lower;2016/08/18
+
+commit 5d1ae3e03be48aef2c4bcb046966f290ce761954
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Aug 18 16:36:10 2016 +0800
+
+    383. Ransom Note;2016/08/18
+
+commit 081e0af9e7e0dfde9f675c3f41776dc015e1a12a
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Aug 18 16:05:02 2016 +0800
+
+    344. Reverse String;2016/08/18
+
+commit f4b8a7aee7ed2a858b8bfde9f9b15ae2a96051dd
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri Aug 12 15:55:25 2016 +0800
+
+    322. Coin Change;use dp, time O(VN), space O(V); 2016/08/12
+
+commit 1b65fbc86eef2a6be5cd3ece946c73bd23b3b7b2
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Thu Aug 11 23:08:48 2016 +0800
+
+    357. Count Numbers with Unique Digits; 2016/08/11
+
+commit 5a99ae98479e2df3bcc9157d3ae14caf58d469bc
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Aug 10 17:29:03 2016 +0800
+
+    319. Bulb Switcher;2016/08/10
+
+commit 45efc6252baa22400353c9808aca7f50e78c2635
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Aug 10 17:15:31 2016 +0800
+
+    382. Linked List Random Node; make it a circle; 2016/08/10
+
+commit 7f8ab4804e97f8a7779489977f57d50de41292b0
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Aug 10 15:00:37 2016 +0800
+
+    378. Kth Smallest Element in a Sorted Matrix; use a priority queue to maintain the order; O(klogn); 2016/09/10
+
+commit c3af35c08de89d23920b363024faf958911b851e
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Aug 9 15:26:27 2016 +0800
+
+    381. Insert Delete GetRandom O(1) - Duplicates allowed; 2016/08/09
+
+commit 10900e9757f6e40ca9a83ebac62ffc963c49a7fa
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat Aug 6 17:33:49 2016 +0800
+
+    380. Insert Delete GetRandom O(1); 2016/08/06
+
+commit 9d949d278491194d0a1e92dbb280f28a8fd8168e
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed May 11 00:19:14 2016 +0800
+
+    10. Regular Expression Matching; Use dp with O(n^2) in space and time
+
+commit cfbf9214cc0b1e71c532f5c4527fa3b7aeef6ca8
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue May 10 23:12:22 2016 +0800
+
+    10. Regular Expression Matching; 2016/05/10
+
+commit c9f618622cdf2b2eea8743a367d6745c20233526
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat May 7 18:14:23 2016 +0800
+
+    10. Regular Expression Matching; submitted 1 year ago
+
+commit c7970d6eefc7b1256f4b2c659f811fc0ac4d65a7
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Sat May 7 00:06:48 2016 +0800
+
+    9. Palindrome Number; simpler; 2016/05/07
+
+commit b2ee8a23a0750c50f94dec6953aa3e8e99f88bd5
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Fri May 6 23:33:30 2016 +0800
+
+    8. String to Integer (atoi); use l to quick check overflow, make it 8ms; 2016/05/06
+
+commit 80865793d4f72923f332c62f3b33f767e614523f
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed May 4 22:33:35 2016 +0800
+
+    8. String to Integer (atoi); submitted 1 year ago
+
+commit 9487fd8c37002707b38f97da513df304df4e85d0
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed May 4 22:31:55 2016 +0800
+
+    7. Reverse Integer; Simpler code; in 8ms; 2016/05/04
+
+commit 330d749d4c9b43701d1b25e3ebdd9d9d7f58816d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed May 4 22:15:11 2016 +0800
+
+    7. Reverse Integer; Submitted 1 year ago
+
+commit d50b3ab09a1d8a7fd19e15d1d46df64a8c624939
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed May 4 22:07:39 2016 +0800
+
+    6..ZigZag Conversion; I wonder if all the quickest answers are faster because of inline???
+
+commit fbc3daac13b291d43063c588b3b8fda72f5d4165
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed May 4 22:05:49 2016 +0800
+
+    5.ZigZag Conversion; Simpler code; 2016/05/04
+
+commit 768e3f8c9302eda651c78ce14417b7508bd82a95
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue May 3 14:17:18 2016 +0800
+
+    6. ZigZag Conversion; submitted 1 year ago
+
+commit 72cb79edb9f813b787ec6900b307526bd7845909
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue May 3 14:15:33 2016 +0800
+
+    5. Longest Palindromic Substring; use Manacher’s algorithm to reduce time to O(n)
+
+commit c86f809c796f94c7b37e2bdf79a619c807fe6e65
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue May 3 13:00:51 2016 +0800
+
+    Use KMP solution, still tooooo slow; 2016/05/03
+
+commit ab3ed34e3dd88fe758380f51e2a59b41427bfa14
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Apr 25 22:21:43 2016 +0800
+
+    5. Longest Palindromic Substring; use dynamic programming, O(n^2), not good enough; 2016/04/25
+
+commit 22367c39c592113cbece407c5903604c87366bd6
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Apr 25 20:59:12 2016 +0800
+
+    4.Longest Palindromic Substring
+    ;submit one year ago
+
+commit 427373e571e54f534cfae267020c04180f8602d9
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Mon Apr 25 20:57:39 2016 +0800
+
+    4.Median of Two Sorted Arrays; 2016/04/25; Do bipartition to k, just like binary search, make it to O(k)
+
+commit 5834ffb4f2fe284e9e78a18e6f82231641a62e57
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Apr 20 11:01:48 2016 +0800
+
+    1.Two Sum; use array instead of vector to reduce some time; 2016/04/20
+
+commit 7d154e072426ae90a40047f8bb2a5c05d10291b1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Apr 20 10:55:08 2016 +0800
+
+    4. Median of Two Sorted Arrays; submitted one year ago
+
+commit 5bc247739a6c6bc7ae0adebd121eeb5dc06ebab1
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Apr 20 10:52:07 2016 +0800
+
+    3.Longest Substring Without Repeating Characters; use array instead of map or unordered map can reduce lots of time; 2016/04/20
+
+commit 765bd7ee8fcc5cd226c58a9e09b8e128d7ed9e6d
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Wed Apr 20 10:30:57 2016 +0800
+
+    3. Longest Substring Without Repeating Characters; submitted one year ago
+
+commit 72dc3d6787f34e7dbd440639c919786e8b712884
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Apr 19 23:11:52 2016 +0800
+
+    2. Add Two Number; 2016/04/19
+
+commit af2e05ee945493fdf5ae90bcba4c62b5da692e4b
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Apr 19 22:43:34 2016 +0800
+
+    2. Add Two Numbers; submitted one year ago
+
+commit 8621655db58e876964a453b4d7564fc60a056c4c
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Apr 19 20:31:03 2016 +0800
+
+    1.Two Sum; Submitted 2016/04/19
+
+commit 354b9d639c6afdb4b4b96e363832794a714d3adb
+Author: liming-vie <liming.vie@gmail.com>
+Date:   Tue Apr 19 19:59:37 2016 +0800
+
+    1.Two Sum; submitted 8 months ago
+
+commit 47d954e48fc7c7e1cd0278b74b24af137f5b1201
+Author: Liming Huang <v-limhua@microsoft.com>
+Date:   Tue Apr 19 00:58:53 2016 +0800
+
+    Initial commit
