@@ -1,22 +1,17 @@
 class Solution {
 public:
     Solution(vector<int> nums) : nums(nums) {
-        srand(time(NULL));
     }
     
     int pick(int target) {
-        int res;
-        int n=0;
-        for(int i=0; i<nums.size(); ++i) {
-            if(nums[i] == target) {
-                if((rand() % (++n)) == 0) {
-                    res = i;
-                }
-            }
+        int res, count = 0;
+        for (int i=0; i<nums.size(); ++i) {
+            if (nums[i] != target) continue;
+            if (rand() % (++count) == 0) res = i;
         }
         return res;
     }
-private:
+    
     vector<int> nums;
 };
 
