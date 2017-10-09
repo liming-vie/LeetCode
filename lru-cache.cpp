@@ -1,75 +1,74 @@
 class LRUCache {
-    struct Node {
-        int key;
-        int val;
-        Node* prev;
-        Node* next;
-        Node():prev(NULL),next(NULL){}
-        Node(int k, int v):key(k), val(v), prev(NULL), next(NULL) {}
+    struct List {
+        List(int k, int v) : key(k), val(v) {}
+        int key = -1;
+        int val = -1;
+        List *next = NULL;
+        List *prev = NULL;
     };
     
 public:
-    LRUCache(int capacity) : capacity_(capacity) {
-        head_=new Node();
-        tail_=head_;
-    }
-    // insert the node in the first place
-    void insert_first(Node* cur) {
-        cur->prev=head_;
-        cur->next=head_->next;
-        if(cur->next)   cur->next->prev=cur;
-        head_->next=cur;
-        if(tail_==head_)    tail_=head_->next;
-    }
-    // use the node with key
-    // move the node to the first place
-    void use(int key) {
-        auto cur=mp_[key];
-        if(cur==tail_) {
-            tail_=tail_->prev;
-            tail_->next=NULL;
-        } else {
-            cur->prev->next=cur->next;
-            if(cur->next)   cur->next->prev=cur->prev;
+    LRUCache(int capacity) : capacity(capacity) { }
+    
+    void use(List* cur) {
+        if (cur==head) {
+            return;
         }
-        insert_first(cur);
+        
+        if (cur == tail) {
+            tail = tail->prev;
+        } else if (cur->next) {
+            cur->next->prev = cur->prev;
+        }
+        
+        if (cur->prev) {
+            cur->prev->next = cur->next;
+            cur->prev = NULL;
+        }
+        
+        if (head && head!=cur) {
+            head->prev = cur;
+            cur->next = head;
+        }
+        head = cur;
+        
+        if (!tail) {
+            tail = cur;
+        }
     }
     
     int get(int key) {
-        if (mp_.find(key)!=mp_.end()) {
-            use(key);
-            return mp_[key]->val;
+        if (mp.find(key) != mp.end()) {
+            use(mp[key]);
+            return mp[key]->val;
         }
         return -1;
     }
     
     void put(int key, int value) {
-        Node* cur;
-        if (mp_.find(key) != mp_.end()) {
-            mp_[key]->val=value;
-            use(key);
+        List *cur = NULL;
+        if (mp.find(key) != mp.end()) {
+            mp[key]->val = value;
+            use(mp[key]);
             return;
+        } else if (mp.size() == capacity) {
+            mp.erase(tail->key);
+            cur = tail;
+            cur->key = key;
+            cur->val = value;
+        } else {
+            cur = new List(key, value);
         }
-        else if (mp_.size() == capacity_) {
-            mp_.erase(tail_->key);
-            tail_->key=key;
-            tail_->val=value;
-            tail_->prev->next=NULL;
-            cur=tail_;
-            tail_=tail_->prev;
-        }
-        else    cur=new Node(key, value);
         
-        insert_first(cur);
-        
-        mp_[key]=cur;
+        mp[key] = cur;
+        use(cur);
     }
     
 private:
-    int capacity_;
-    Node *head_;
-    Node *tail_;
-    unordered_map<int, Node*> mp_;
+    int capacity;
+    List *head = NULL;
+    List *tail = NULL;
+    unordered_map<int, List*> mp;
 };
 
 /**
