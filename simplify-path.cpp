@@ -1,32 +1,30 @@
 class Solution {
 public:
-    int end(string&path, int vi) {
-        for(int i=vi+1; i<path.length(); ++i) 
-            if(path[i]=='/')
-                return i;
-        return path.length();
+    void process(vector<string> &dirs, const string &str) {
+        if (str == "..")    {
+            if (dirs.size())    dirs.pop_back();
+        } else if (str != "" && str != ".")  dirs.push_back(str);
     }
+    
     string simplifyPath(string path) {
-        stack<string> st;
-        int len=path.length();
-        for(int i=0; i<len; ++i) {
-            if(path[i]=='/')    continue;
-            
-            int e=end(path,i);
-            string cur=path.substr(i, e-i);
-            i=e;
-            if(cur=="..") {
-                if(!st.empty())
-                    st.pop();
+        vector<string> dirs;
+        for (int i=1; i<path.length(); ) {
+            int vi = path.find('/', i);
+            if (vi == -1) {
+                process(dirs, path.substr(i));
+                i = path.length();
+            } else {
+                process(dirs, path.substr(i, vi-i));
+                i = vi+1;
             }
-            else if(cur!=".") st.push(cur);
         }
         
-        string res="";
-        while(!st.empty()) {
-            res="/"+st.top()+res;
-            st.pop();
+        if (dirs.empty())   return "/";
+        
+        stringstream ss;
+        for (const string& str : dirs) {
+            ss << '/' << str;
         }
-        return res==""?"/":res;
+        return ss.str();
     }
 };
