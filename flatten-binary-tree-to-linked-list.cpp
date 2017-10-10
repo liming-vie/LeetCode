@@ -16,18 +16,20 @@ public:
         TreeNode*move=root;
         TreeNode*pre=NULL;
         while(!st.empty() || move) {
-            if(move) {
-                st.push(move);
-                if(pre) pre->right=move;
-                pre=move;
-                move=move->left;
-                pre->left=pre->right;
+            if (move) {
+                while (move) {
+                    st.push(move);
+                    if (pre)    pre->right = move;
+                    pre = move;
+                    move = move->left;
+                    pre->left = pre->right;
+                }
             } else {
-                move=st.top();
+                move = st.top();
                 st.pop();
-                auto tmp=move;
-                move=move->left;
-                tmp->left=NULL;
+                auto tmp = move;
+                move = move->left;
+                tmp->left = NULL;
             }
         }
     }
