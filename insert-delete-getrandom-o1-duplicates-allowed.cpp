@@ -2,46 +2,43 @@ class RandomizedCollection {
 public:
     /** Initialize your data structure here. */
     RandomizedCollection() {
-        srand(time(NULL));
-        vals.reserve(100);
+        
     }
     
     /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
     bool insert(int val) {
-        mp[val].push_back(vals.size());
-        vals.push_back(val);
-        return mp[val].size() == 1;
+        mp[val].insert(nums.size());
+        nums.push_back(val);
+        return mp[val].size()==1;
     }
     
     /** Removes a value from the collection. Returns true if the collection contained the specified element. */
     bool remove(int val) {
-        if(mp[val].size() == 0) {
-            return false;
-        }
-        int idx = mp[val].back();
-        mp[val].pop_back();
+        if (mp[val].size() == 0)    return false;
         
-        int last=vals.size()-1;
-        int tmp=vals[last];
-        vals[idx]=tmp;
-        vals.resize(last);
-        for(auto i=mp[tmp].begin(); i!=mp[tmp].end(); ++i) {
-            if(*i==last) {
-                *i=idx;
-                break;
-            }
+        int idx = *mp[val].begin();
+        mp[val].erase(idx);
+        
+        int n=nums.size();
+        if (idx < n-1) {
+            int v = nums[n-1];
+            nums[idx] = v;
+            
+            mp[v].erase(n-1);
+            mp[v].insert(idx);
+            
         }
+        nums.resize(n-1);
         return true;
     }
     
     /** Get a random element from the collection. */
     int getRandom() {
-        return vals[rand() % vals.size()];
+        return nums[rand() % nums.size()];
     }
     
-private:
-    map<int, vector<int>> mp;
-    vector<int> vals;
+    unordered_map<int, unordered_set<int>> mp;
+    vector<int> nums;
 };
 
 /**
