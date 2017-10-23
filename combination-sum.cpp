@@ -1,30 +1,30 @@
 class Solution {
 public:
+    vector<int> cur;
     vector<vector<int>> res;
     
-    void func(vector<int>& nums, int vi, vector<int>& cur, int sum, int target) {
-        if(vi == nums.size()) {
-            if(sum==target)
-                res.push_back(cur);
-            return;
+    void func(const vector<int>& candidates, int vi, int target) {
+        if (vi==candidates.size()) {
+            if (target==0)  res.push_back(cur);
+            return ;
         }
-        // not put this number
-        func(nums, vi+1, cur, sum, target);
-        int s;
-        for(s=sum+nums[vi]; s<=target; s+=nums[vi]) {
-            cur.push_back(nums[vi]);
-            func(nums, vi+1, cur, s, target);
+        
+        int maxn=target/candidates[vi];
+        for (int i=0; i<maxn; ++i) {
+            cur.push_back(candidates[vi]);
+            target -= candidates[vi];
+            func(candidates, vi+1, target);
         }
-        s-=nums[vi];
-        while(s>sum) {
-            s-=nums[vi];
+        
+        for (int i=0; i<maxn; ++i)
             cur.pop_back();
-        }
+        target += candidates[vi]*maxn;
+        
+        func(candidates, vi+1, target);
     }
-
+    
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        vector<int> cur;
-        func(candidates, 0, cur, 0, target);
+        func(candidates, 0, target);
         return res;
     }
 };
