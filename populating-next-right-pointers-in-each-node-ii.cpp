@@ -8,24 +8,36 @@
  */
 class Solution {
 public:
+    inline TreeLinkNode *find (TreeLinkNode* root) {
+        while (root) {
+            if (root->left || root->right)  return root;
+            root=root->next;
+        }
+        return NULL;
+    }
+
     void connect(TreeLinkNode *root) {
-        if(!root)   return;
-        queue<TreeLinkNode*> q;
-        TreeLinkNode* pre=NULL;
-        q.push(root); q.push(NULL);
-        while(!q.empty()) {
-            auto t=q.front();
-            q.pop();
-            if(t) {
-                if(pre) pre->next=t;
-                pre=t;
-                if(t->left) q.push(t->left);
-                if(t->right) q.push(t->right);
-            } else {
-                if(q.empty())   break;
-                pre=NULL;
-                q.push(NULL);
+        TreeLinkNode *prev = root, *cur, *next = NULL;
+
+        while (prev) {
+            cur = prev;
+            while (cur) {
+                TreeLinkNode* tmp=find(cur->next);
+                if (cur->left) {
+                    if (!next)  next=cur->left;
+                    if (cur->right)  cur->left->next = cur->right;
+                    else if (tmp) {
+                        cur->left->next = tmp->left ? tmp->left : tmp->right;
+                    }
+                }
+                if (cur->right) {
+                    if (!next) next=cur->right;
+                    if (tmp)   cur->right->next = tmp->left ? tmp->left : tmp->right;
+                }
+                cur=tmp;
             }
+            prev = next;
+            next = NULL;
         }
     }
 };
