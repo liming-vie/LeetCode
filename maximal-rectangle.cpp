@@ -1,30 +1,26 @@
 class Solution {
 public:
     int maximalRectangle(vector<vector<char>>& matrix) {
-        int n=matrix.size(), m=n==0?0:matrix[0].size();
-        if(!n || !m)    return 0;
-        // process length of '1' in each row
-        vector<vector<int>> dp(n+1, vector<int>(m));
-        for(int i=0; i<n; ++i) {
-            dp[i][0]=matrix[i][0]-'0';
-            for(int j=1; j<m; ++j){
-                dp[i][j]= matrix[i][j]=='1'?dp[i][j-1]+1:0;
-            }
-        }
-        for(int j=0; j<m; ++j)  dp[n][j]=0;
-        // convert to similar problem as 84. Largest Rectangle in Histogram
-        ++n;
+        if (!matrix.size()) return 0;
+        int n=matrix.size(), m=matrix[0].size();
+        
         int res=0;
-        for(int j=0; j<m; ++j) {
-            stack<int> st;
-            for(int i=0; i<n; ++i) {
-                while(!st.empty() && dp[st.top()][j] > dp[i][j]) {
-                    int t=st.top();
+        vector<int> dp(m+1, 0);
+        for (int i=0; i<n; ++i) {
+            stack<pair<int, int>> st; // i, h
+            st.push(make_pair(-1,0));
+            for (int j=0; j<=m; ++j) {
+                if (j<m && matrix[i][j] == '1')    ++dp[j];
+                else dp[j]=0;
+                
+                int last = j;
+                while (st.top().second > dp[j]) {
+                    res = max(res, st.top().second * (j-st.top().first));
+                    last = st.top().first;
                     st.pop();
-                    t=dp[t][j]*(st.empty()?i:i-st.top()-1);
-                    res=t>res?t:res;
                 }
-                st.push(i);
+                
+                st.push(make_pair(last, dp[j]));
             }
         }
         return res;
