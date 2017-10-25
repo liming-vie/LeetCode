@@ -1,49 +1,49 @@
 class Solution {
 public:
-    void fill(stringstream&ss, int size) {
-        for(int i=0; i<size; ++i)
-            ss<<' ';
+    string fill(int len) {
+        string res;
+        while(len--)    res+=" ";
+        return res;
     }
+    
     vector<string> fullJustify(vector<string>& words, int maxWidth) {
         vector<string> res;
-        int n=words.size();
-        if(n==0)    return res;
+        if (!words.size())  return res;
+        int start=0, curl=words[0].length();
         
-        int curl=words[0].length(), left=0;
-        stringstream ss;
-        
-        for(int i=1; i<n; ++i) {
-            if(curl+1+words[i].length()>maxWidth) {
-                // fill words ans blanks
-                int blank_count=i-left-1;
-                int tot_blank=(maxWidth-curl)+blank_count;
-                ss<<words[left];
-                if(i-1==left) {
-                    fill(ss,tot_blank);
-                }
-                else {
-                    int blank_size=tot_blank/blank_count;
-                    int mod=tot_blank%blank_count;
-                    for(int j=left+1; j<i; ++j) {
-                        if(j<=left+mod) fill(ss, blank_size+1);
-                        else    fill(ss, blank_size);
-                        ss<<words[j];
+        for (int i=1; i<=words.size(); ++i) {
+            if (i==words.size() || curl+words[i].length()+1 > maxWidth) {
+                int num_interval = i-start-1;
+                int tot_space =maxWidth-curl+num_interval;
+                
+                string blank, str;
+                if (i==start+1) {
+                    str = words[start]+fill(tot_space);;
+                } else if (i==words.size()) {
+                    str = words[start++];
+                    for (; start<i; ++start) {
+                        str += " " + words[start];
+                    }
+                    str += fill(tot_space-num_interval);
+                } else {
+                    int per_spaces=tot_space/num_interval;
+                    blank = fill(per_spaces);
+                    
+                    int left = tot_space % num_interval;
+                    str=words[start++];
+                    for (int j=1; start<i; ++j, ++start) {
+                        if (j<=left)    str += " ";
+                        str += blank + words[start];
                     }
                 }
-                res.push_back(ss.str());
-                ss.str("");
-                left=i;
-                curl=words[i].length();
-            } else {
-                curl+=1+words[i].length();
-            }
-        }
-        ss<<words[left];
-        for(int i=left+1; i<n; ++i) {
-            ss<<' '<<words[i];
-        }
-        fill(ss, maxWidth-ss.str().length());
-        res.push_back(ss.str());
+                
+                res.push_back(str);
+                start=i;
+                curl=i==words.size()?0:words[i].length();
+            } 
+            else curl += words[i].length() + 1;
+        }        
+        
         return res;
     }
 };
