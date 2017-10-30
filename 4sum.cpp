@@ -1,55 +1,39 @@
 class Solution {
-private:
-    struct Num{
-        int val, idx;
-    };
 public:
+    inline int L(const vector<int>& nums, int l, int r) {
+        ++l;
+        while (l<r && nums[l]==nums[l-1])   ++l;
+        return l;
+    }
+    
+    inline int R(const vector<int>& nums, int l, int r) {
+        --r;
+        while (l<r && nums[r]==nums[r+1])   --r;
+        return r;
+    }
+    
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
-        int n = nums.size();
-        vector<vector<int>> res;
-        if (n<4) return res;
-
         sort(nums.begin(), nums.end());
-        map<int, vector<pair<Num, Num>>> mp;
-        for (int i = 0; i<n; ++i)
-            for (int j = i + 1; j<n; ++j) {
-                mp[nums[i] + nums[j]].push_back(
-                    make_pair(Num{ nums[i], i }, Num{ nums[j], j }));
-            }
-
-        auto l = mp.begin(), r = mp.end(); --r;
-        bool equal = false;
-        while (!equal && l->first <= r->first) {
-            equal = (l==r);
-            int s = l->first + r->first;
-            if (s<target)    ++l;
-            else if (s>target)   --r;
-            else {
-                auto& v1 = l->second;
-                auto& v2 = r->second;
-                int count = 0;
-                for (int i = 0; i<l->second.size(); ++i) {
-                    for (int j = 0; j<r->second.size(); ++j) {
-                        if (v1[i].second.idx >= v2[j].first.idx) continue;
-                        vector<int> cur{ v1[i].first.val, v1[i].second.val,
-                            v2[j].first.val, v2[j].second.val };
-                        bool valid = true;
-                        for (int k = res.size() - 1; k>=(int)res.size() - count; --k)
-                            if (res[k] == cur) {
-                                valid = false;
-                                break;
-                            }
-
-                        if (!valid)  continue;
-                        res.push_back(cur);
-                        ++count;
+        int n=nums.size();
+        vector<vector<int>> res;
+        for (int i=0; i<n; ++i) {
+            if (i && nums[i]==nums[i-1]) continue;
+            for (int j=i+1; j<n; ++j) {
+                if (j!=i+1 && nums[j]==nums[j-1]) continue;
+                int l=j+1, r=n-1;
+                int t=target-nums[i]-nums[j];
+                while (l<r) {
+                    int sum=nums[l]+nums[r];
+                    if (sum < t)    l=L(nums, l, r);
+                    else if (sum>t) r=R(nums, l, r);
+                    else {
+                        res.push_back({nums[i], nums[j], nums[l], nums[r]});
+                        l=L(nums, l, r);
+                        r=R(nums, l, r);
                     }
                 }
-                ++l;
-                --r;
             }
         }
-
         return res;
     }
 };
