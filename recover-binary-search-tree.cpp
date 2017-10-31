@@ -7,26 +7,27 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-
-// morris traversal; refer to http://www.cnblogs.com/grandyang/p/4298069.html
- 
- #define CHECK()    \
-    if(last && last->val > cur->val) {  \
-        if(!first)  first=last;         \
-        second=cur;                     \
-    }                                   \
-    last=cur;
- 
 class Solution {
 public:
+    TreeNode *last=NULL, *first=NULL, *second=NULL;
+    
+    void visit(TreeNode *cur) {
+        if (last && last->val > cur->val) {
+            if (!first) first=last;
+            second = cur;
+        }
+        last=cur;
+    }
+    
     void recoverTree(TreeNode* root) {
-        TreeNode *pre, *cur=root, *first=NULL, *second=NULL, *last=NULL;
-        while(cur) {
-            if(cur->left) {
-                pre=cur->left;
-                while(pre->right && pre->right != cur) pre=pre->right;
-                if(pre->right) {
-                    CHECK();
+        TreeNode *pre=NULL, *cur=root;
+        while (cur) {
+            if (cur->left) {
+                pre = cur->left;
+                while (pre->right && pre->right!=cur)   pre=pre->right;
+                
+                if (pre->right) {
+                    visit(cur);
                     cur=cur->right;
                     pre->right=NULL;
                 } else {
@@ -34,10 +35,10 @@ public:
                     cur=cur->left;
                 }
             } else {
-                CHECK();
+                visit(cur);
                 cur=cur->right;
             }
         }
-        if(first && second) swap(first->val, second->val);
+        if (first && second)    swap(first->val, second->val);
     }
 };
