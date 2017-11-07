@@ -17,20 +17,11 @@ public:
         
         for (int i=9; i<s.length(); ++i) {
             cur = ((str2val[s[i]] | (cur<<2)) & mask);
-            ++count[cur];
+            if (++count[cur]==2) {
+                res.push_back(s.substr(i-9, 10));
+            }
         }
         
-        for (const auto &kv : count) {
-            if (kv.second<=1)   continue;
-            string str;
-            int key=kv.first;
-            for (int i=0; i<10; ++i) {
-                str = val2str[key&3] + str;
-                key>>=2;
-            }
-            res.push_back(str);
-        }
-         
         return res;
     }
 };
