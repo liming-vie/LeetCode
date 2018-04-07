@@ -11,25 +11,23 @@ public:
     ListNode* oddEvenList(ListNode* head) {
         if (!head || !head->next)   return head;
         
-        ListNode *even_head=head->next, *odd_move=head, *even_move=even_head;
-        ListNode *move = even_head->next, *next;
-        bool is_odd=true;
-        while (move) {
-            next = move->next;
-            if (is_odd) {
-                odd_move->next = move;
-                odd_move = odd_move->next;
-            } else {
-                even_move->next = move;
-                even_move = even_move->next;
-            }
-            is_odd = !is_odd;
-            move = next;
+        ListNode *odd_head = head, *even_head = head->next;
+        ListNode *odd_move = head, *even_move = head->next;
+        while (odd_move->next->next && even_move->next->next) {
+            odd_move->next = odd_move->next->next;
+            odd_move = odd_move->next;
+            
+            even_move->next = even_move->next->next;
+            even_move = even_move->next;
         }
         
-        odd_move->next = even_head;
+        if (odd_move->next->next) {
+            odd_move->next = odd_move->next->next;
+            odd_move = odd_move->next;
+        }
         even_move->next = NULL;
         
-        return head;
+        odd_move->next = even_head;
+        return odd_head;
     }
 };
