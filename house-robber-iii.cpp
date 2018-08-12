@@ -1,5 +1,4 @@
-/**
- * Definition for a binary tree node.
+tion for a binary tree node.
  * struct TreeNode {
  *     int val;
  *     TreeNode *left;
@@ -12,17 +11,14 @@ public:
     pair<int, int> func(TreeNode* root) {
         if (!root)  return make_pair(0, 0);
         
-        const auto &left=func(root->left);
-        const auto &right=func(root->right);
-        
-        int nor = max(left.first, left.second) + max(right.first, right.second);
-        int rb = left.second + right.second + root->val;
-        
-        return make_pair(rb, nor);
+        auto left = func(root->left);
+        auto right = func(root->right);
+        return make_pair(root->val + left.second + right.second,
+                         max(left.first, left.second) + max(right.first, right.second));
     }
     
     int rob(TreeNode* root) {
-        const auto& res = func(root);
-        return max(res.first, res.second);
+        auto ret = func(root);
+        return max(ret.first, ret.second);
     }
 };
